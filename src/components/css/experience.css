@@ -1,0 +1,90 @@
+.bloque-experience {
+  position: relative;
+  margin: 60px auto;
+  padding-top: 100px;
+  min-height: 60vh;
+}
+
+.bloque-experience .bloque-titulos {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.bloque-experience .bloque-titulos .fondo-titulo {
+  font-size: 5rem;
+  color: #83a5ff;
+  opacity: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+.bloque-experience .bloque-titulos .titulo {
+  position: absolute;
+  text-align: end;
+  width: 90%;
+  color: #fff;
+  font-size: 3rem;
+  top: 3rem;
+}
+
+
+
+.bloque-experience .bloque-texto {
+  margin-top: 10px;
+  width: 70%;
+  padding: 20px;
+  font-size: .8rem;
+  background-color: #264066;
+  border-radius: 15px;
+  color: #fff;
+  position: relative;
+}
+
+.bloque-experience .bloque-texto p {
+  text-align: end;
+  padding: 0;
+  margin: 0;
+}
+
+.bloque-experience .progreso {
+  width: 5px;
+  min-height: 35vh;
+  background: linear-gradient(to bottom, #264066, transparent);
+  border-radius: 20px;
+  position: absolute;
+  right: -20%;
+  top: 0;
+}
+
+.bloque-experience .progreso::after {
+  content: '';
+  background-color: #264066;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: -13px;
+  border-radius: 50%;
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .bloque-experience {
+    margin: 20px 0;
+  }
+
+  .bloque-experience .bloque-texto {
+    width: 85%;
+    font-size: .7rem;
+  }
+
+  .bloque-experience .progreso {
+    right: -9%;
+  }
+}

@@ -1,0 +1,97 @@
+.bloque-projects {
+  position: relative;
+  margin-top: 30px auto;
+  min-height: 60vh;
+}
+
+.bloque-projects .bloque-titulos {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.bloque-projects .bloque-titulos .fondo-titulo {
+  font-size: 5rem;
+  color: #83a5ff;
+  opacity: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+.bloque-projects .bloque-titulos .titulo {
+  position: absolute;
+  text-align: end;
+  width: 90%;
+  color: #fff;
+  font-size: 3rem;
+  top: 3rem;
+}
+
+
+.bloque-projects .bloque-items {
+  padding-top: 90px;
+}
+
+.bloque-projects .bloque-items .item {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  background-color: rgb(217, 217, 217, 0.2);
+  color: #fff;
+  border-radius: 15px;
+
+}
+
+.bloque-projects .bloque-items .item .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido img {
+  object-fit: cover;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+}
+
+.bloque-projects .item .item-caracteristicas {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+
+.bloque-items .item-caracteristicas div {
+  display: flex;
+  gap: 10px;
+}
+
+.bloque-items .item-caracteristicas i {
+  font-size: 2rem;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .bloque-items img {
+    width: 100%;
+  }
+
+  .bloque-projects .bloque-items .contenido {
+    font-size: .8rem;
+  }
+
+  .bloque-projects .item .item-caracteristicas {
+    width: 100%;
+    padding: 0;
+  }
+}

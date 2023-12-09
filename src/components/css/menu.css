@@ -1,0 +1,75 @@
+::after,
+::before:hover {
+  box-sizing: inherit;
+}
+
+.bloque-menu {
+  background-color: #Cad9ed;
+}
+
+.bloque-menu .container {
+  display: flex;
+}
+
+.bloque-menu .items {
+  width: 100%;
+  justify-content: end;
+  gap: 10px;
+}
+
+.bloque-menu .items a {
+  font-size: .9rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-left: solid 2px #83a5ff;
+  padding: 0 5px;
+  position: relative;
+}
+
+.bloque-menu .items a:hover {
+  cursor: pointer;
+}
+
+
+.bloque-menu .underline::after {
+  content: '';
+  text-align: center;
+  background-color: #83a4ff;
+  width: 0px;
+  text-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 300ms;
+}
+
+.bloque-menu .about:hover::after {
+  content: "About Me";
+  width: 100%;
+  transition-delay: 0s;
+  color: white;
+}
+
+
+.bloque-menu .experience:hover::after {
+  content: "Experience";
+  width: 100%;
+  transition-delay: 0s;
+  color: white;
+}
+
+.bloque-menu .projects:hover::after {
+  content: "Projects";
+  width: 100%;
+  transition-delay: 0s;
+  color: white;
+}
+
+.bloque-menu .skills:hover::after {
+  content: "Skills";
+  width: 100%;
+  transition-delay: 0s;
+  color: white;
+}

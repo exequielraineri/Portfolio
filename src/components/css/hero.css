@@ -1,0 +1,103 @@
+.bloque-hero {
+  min-height: 40vh;
+  margin-top: 30px;
+}
+
+.bloque-hero .bloque-card {
+  position: relative;
+  background-color: #264066;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+}
+
+.bloque-card h2 {
+  font-size: 1.6rem;
+}
+
+.bloque-card h3 {
+  font-size: 1.2rem;
+}
+
+.bloque-card p {
+  width: 80%;
+  border-bottom: solid black 2px;
+  padding-bottom: 30px;
+  font-size: 1rem;
+}
+
+.bloque-hero .bloque-card img {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  right: -7rem;
+  top: 2rem;
+  border-radius: 1000px;
+  filter: grayscale(50%);
+}
+
+.bloque-hero .redes {
+  width: 80%;
+  display: flex;
+  gap: 10px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: black;
+}
+
+.redes a i {
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+  transition: all .3s;
+}
+
+.redes a:hover i {
+  color: white;
+  text-shadow: 0 0 2px white;
+  box-shadow: 0 0 5px #fff;
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bloque-hero .bloque-card img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    right: -4.5rem;
+    top: 2rem;
+    border-radius: 1000px;
+    filter: grayscale(50%);
+  }
+
+  .bloque-card h2 {
+    font-size: 1rem;
+  }
+
+  .bloque-card h3 {
+    font-size: .8rem;
+  }
+
+  .bloque-card p {
+    font-size: .7rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* arge devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

@@ -1,0 +1,94 @@
+.bloque-aboutMe {
+  margin: 30px auto;
+  position: relative;
+  min-height: 60vh;
+}
+
+
+
+.bloque-aboutMe .bloque-parrafo {
+  background-color: #264066;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  width: 90%;
+  margin-left: auto;
+
+}
+
+.bloque-aboutMe .bloque-parrafo p {
+  margin-left: 20%;
+  font-weight: 100;
+  text-align: justify;
+}
+
+.bloque-aboutMe img {
+  position: absolute;
+  width: 10rem;
+  height: 13rem;
+  object-fit: cover;
+  border-radius: 10px;
+  top: 4rem;
+  left: -1rem;
+}
+
+.bloque-aboutMe .bloque-titulos {
+  position: relative;
+}
+
+
+.bloque-aboutMe h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: #83a5ff;
+  opacity: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+.bloque-aboutMe h2 {
+  position: absolute;
+  text-align: end;
+  width: 90%;
+  color: #fff;
+  font-size: 3rem;
+  top: 3rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .bloque-aboutMe {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bloque-aboutMe img {
+    position: relative;
+    width: 6rem;
+    height: 9rem;
+    top: 0;
+    left: 0;
+    margin: 10px 0;
+  }
+
+  .bloque-aboutMe .bloque-parrafo {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bloque-aboutMe .bloque-parrafo p {
+    padding: 0;
+    margin: 10px 0;
+    width: 80%;
+  }
+}
