@@ -37,7 +37,7 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/mysql.png"
+            src={"/assets/mysql.png"}
             alt="java"
           />
           <p>MySql</p>
@@ -48,7 +48,7 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/spring.png"
+            src={"assets/spring.png"}
             alt="java"
           />
           <p>Spring</p>
@@ -59,7 +59,7 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/html.png"
+            src={"./assets/html.png"}
             alt="java"
           />
           <p>HTML</p>
