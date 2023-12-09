@@ -1,6 +1,8 @@
 body {
   background-color: #141e30;
   font-family: 'Jura', sans-serif;
+  max-width: 100vh;
+  min-width: 100%;
 }
 
 * {

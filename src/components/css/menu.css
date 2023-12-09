@@ -35,7 +35,7 @@
 
 .bloque-menu .underline::after {
   content: '';
-  text-align: center;
+  text-align: start;
   background-color: #83a4ff;
   width: 0px;
   text-wrap: nowrap;
@@ -48,6 +48,7 @@
 .bloque-menu .about:hover::after {
   content: "About Me";
   width: 100%;
+  max-width: 200px;
   transition-delay: 0s;
   color: white;
 }
@@ -56,6 +57,7 @@
 .bloque-menu .experience:hover::after {
   content: "Experience";
   width: 100%;
+  max-width: 200px;
   transition-delay: 0s;
   color: white;
 }
@@ -63,6 +65,7 @@
 .bloque-menu .projects:hover::after {
   content: "Projects";
   width: 100%;
+  max-width: 200px;
   transition-delay: 0s;
   color: white;
 }
@@ -70,6 +73,7 @@
 .bloque-menu .skills:hover::after {
   content: "Skills";
   width: 100%;
+  max-width: 200px;
   transition-delay: 0s;
   color: white;
 }

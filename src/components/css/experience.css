@@ -13,7 +13,7 @@
 }
 
 .bloque-experience .bloque-titulos .fondo-titulo {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #83a5ff;
   opacity: 5%;
   margin: 0;
@@ -87,4 +87,11 @@
   .bloque-experience .progreso {
     right: -9%;
   }
+
+  .bloque-experience .bloque-titulos .fondo-titulo {
+    width: 100%;
+    font-size: 4rem;
+  }
+
+
 }

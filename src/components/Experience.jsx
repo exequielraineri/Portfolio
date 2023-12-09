@@ -27,7 +27,6 @@ export const Experience = () => {
         <p>May, 2023 - Present</p>
         <h3
           style={{
-            fontSize: "1.3rem",
             margin: 0,
           }}
         >
@@ -35,7 +34,6 @@ export const Experience = () => {
         </h3>
         <h4
           style={{
-            fontSize: "1.5rem",
             margin: 0,
             marginBottom: "5px",
           }}

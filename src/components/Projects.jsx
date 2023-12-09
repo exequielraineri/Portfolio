@@ -90,6 +90,9 @@ const Proj_1 = () => {
             data-aos-duration="2000"
           >
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://exequielraineri.github.io/ViveroReact-UTN/"
               className="btn btn-sm btn-primary"
               style={{
                 borderRadius: "10px",
@@ -161,6 +164,9 @@ const Proj_2 = () => {
             data-aos-duration="2000"
           >
             <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/exequielraineri/puntoVenta-JavaFX"
               className="btn btn-sm btn-primary"
               style={{
                 borderRadius: "10px",
