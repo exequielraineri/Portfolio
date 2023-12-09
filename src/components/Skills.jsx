@@ -2,6 +2,16 @@ import "./css/skills.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import java from "../assets/java_original.png";
+import css from "../assets/css.png";
+import figma from "../assets/figma.png";
+import bootstrap from "../assets/bootstrap.png";
+import github from "../assets/github.png";
+import javascript from "../assets/javascript.png";
+import mysql from "../assets/mysql.png";
+import react from "../assets/react.png";
+import spring from "../assets/spring.png";
+import html from "../assets/html.png";
 export const Skills = () => {
   useEffect(() => {
     Aos.init();
@@ -26,7 +36,7 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/java_original.png"
+            src={java}
             alt="java"
           />
           <p>Java</p>
@@ -37,8 +47,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src={"/assets/mysql.png"}
-            alt="java"
+            src={mysql}
+            alt="Mysql"
           />
           <p>MySql</p>
         </article>
@@ -48,8 +58,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src={"assets/spring.png"}
-            alt="java"
+            src={spring}
+            alt="Spring"
           />
           <p>Spring</p>
         </article>
@@ -59,8 +69,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src={"./assets/html.png"}
-            alt="java"
+            src={html}
+            alt="HTML"
           />
           <p>HTML</p>
         </article>
@@ -70,8 +80,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/css.png"
-            alt="java"
+            src={css}
+            alt="CSS"
           />
           <p>CSS</p>
         </article>
@@ -81,8 +91,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/javascript.png"
-            alt="java"
+            src={javascript}
+            alt="Javascript"
           />
           <p>Javascript</p>
         </article>
@@ -92,8 +102,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/react.png"
-            alt="java"
+            src={react}
+            alt="React Js"
           />
           <p>React Js</p>
         </article>
@@ -103,8 +113,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/figma.png"
-            alt="java"
+            src={figma}
+            alt="Figma"
           />
           <p>Figma</p>
         </article>
@@ -114,8 +124,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/github.png"
-            alt="java"
+            src={github}
+            alt="GitHub"
           />
           <p>GitHub</p>
         </article>
@@ -125,8 +135,8 @@ export const Skills = () => {
           className="skill-item"
         >
           <img
-            src="./assets/bootstrap.png"
-            alt="java"
+            src={bootstrap}
+            alt="Bootstrap"
           />
           <p>Bootstrap</p>
         </article>

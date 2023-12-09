@@ -2,6 +2,9 @@ import "./css/projects.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import imgVivero from "../assets/vivero.jpg";
+import imgPuntoVenta from "../assets/ptoVenta.png";
+
 export const Projects = () => {
   useEffect(() => {
     Aos.init();
@@ -40,7 +43,7 @@ const Proj_1 = () => {
           <img
             data-aos="fade-right"
             data-aos-duration="2500"
-            src="src/assets/vivero.JPG"
+            src={imgVivero}
             alt="Vivero"
             width={100}
           />
@@ -116,7 +119,7 @@ const Proj_2 = () => {
           <img
             data-aos="fade-right"
             data-aos-duration="2500"
-            src="src/assets/ptoVenta.PNG"
+            src={imgPuntoVenta}
             alt="Punto Venta"
             width={100}
           />

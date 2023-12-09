@@ -2,6 +2,9 @@ import { useEffect } from "react";
 import "./css/hero.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+
+import imgExe from "../assets/exe.PNG";
+
 export const Hero = () => {
   useEffect(() => {
     Aos.init();
@@ -15,7 +18,7 @@ export const Hero = () => {
     >
       <div className="bloque-card">
         <img
-          src={"src/assets/exe.PNG"}
+          src={imgExe}
           alt="Exequiel Raineri"
         />
         <h2

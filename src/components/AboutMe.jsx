@@ -2,6 +2,7 @@ import "./css/aboutMe.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import imgExeAbout from "../assets/exe.jpg";
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init();
@@ -25,7 +26,7 @@ export const AboutMe = () => {
       <div className="bloque-parrafo">
         <img
           width={100}
-          src="src/assets/exe.jpg"
+          src={imgExeAbout}
           alt="Exequiel"
         />
         <p>
