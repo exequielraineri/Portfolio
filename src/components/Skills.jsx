@@ -29,7 +29,7 @@ export const Skills = () => {
         <h1 className="fondo-titulo">Skills</h1>
         <h2 className="titulo">Skills</h2>
       </div>
-      <section className="container section-skills">
+      <section className="container section-skills shadow">
         <article
           data-aos="fade-up"
           data-aos-duration="500"

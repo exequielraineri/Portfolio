@@ -1,7 +1,7 @@
 import "./css/footer.css";
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="shadow-lg">
       <p>Developed by Exequiel Raineri</p>
       <p>Copyright 2023 Exequiel Raineri</p>
       <div className="footer-redes">

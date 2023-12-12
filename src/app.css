@@ -10,3 +10,35 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+
+body {
+  position: relative;
+  background: linear-gradient(120deg,
+      #1b2941,
+      #090e16);
+}
+
+
+.imagenFondoBody {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 10%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+.rectangle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 5%;
+  background-image: url(assets/fondoBody.jpeg);
+  background-size: cover;
+  filter: drop-shadow(0 0 3px black);
+  border-radius: 10px;
+  left: 20%;
+}

@@ -5,11 +5,12 @@
 
 .bloque-hero .bloque-card {
   position: relative;
-  background-color: #264066;
+  background-color: rgba(38, 64, 102, 0.835);
   color: #fff;
   padding: 20px;
   border-radius: 15px;
   width: 80%;
+  backdrop-filter: blur(10px);
 }
 
 .bloque-card h2 {
@@ -36,7 +37,10 @@
   top: 2rem;
   border-radius: 3px 50px 50px;
   filter: grayscale(50%);
+
 }
+
+
 
 
 .bloque-hero .redes {

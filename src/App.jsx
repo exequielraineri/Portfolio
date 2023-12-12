@@ -7,7 +7,7 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
-
+import imgFondo from "./assets/fondoBody.jpeg";
 function App() {
   return (
     <>
@@ -18,6 +18,11 @@ function App() {
       <Projects></Projects>
       <Skills></Skills>
       <Footer></Footer>
+      <img
+        className="imagenFondoBody"
+        src={imgFondo}
+        alt="Fondo"
+      />
     </>
   );
 }

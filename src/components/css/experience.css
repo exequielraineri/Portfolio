@@ -37,10 +37,12 @@
   padding: 20px;
   font-size: .8rem;
   background-color: #264066;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #fff;
   position: relative;
 }
+
+
 
 .bloque-experience .bloque-texto p {
   text-align: end;
@@ -65,12 +67,17 @@
   height: 30px;
   display: block;
   position: absolute;
+  transform: scale(.8);
   top: 20%;
   left: -13px;
   border-radius: 50%;
-
+  transition: all .5s;
 }
 
+
+.bloque-experience .bloque-texto:hover .progreso::after {
+  transform: scale(1);
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

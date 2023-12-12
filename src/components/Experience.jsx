@@ -22,7 +22,7 @@ export const Experience = () => {
       <div
         data-aos="fade-right"
         data-aos-duration="2000"
-        className="bloque-texto"
+        className="bloque-texto shadow"
       >
         <p>May, 2023 - Present</p>
         <h3
@@ -46,7 +46,7 @@ export const Experience = () => {
           </li>
           <li>Creation of simulation software for an industrial process.</li>
         </ul>
-        <div className="progreso"></div>
+        <div className="progreso shadow"></div>
       </div>
     </div>
   );

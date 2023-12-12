@@ -4,8 +4,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import imgExe from "../assets/exe.PNG";
+import VanillaTilt from "vanilla-tilt";
 
 export const Hero = () => {
+  VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
+    speed: 1000,
+    max: 15,
+    transition: true,
+  });
   useEffect(() => {
     Aos.init();
   }, []);
@@ -16,8 +22,17 @@ export const Hero = () => {
       id="hero"
       className="container bloque-hero"
     >
-      <div className="bloque-card">
+      <div
+        data-tilt
+        className="bloque-card shadow card-tilt"
+        style={{
+          transformStyle: "preserve-3d",
+          perspective: "1000px",
+        }}
+      >
         <img
+          data-tilt
+          className="shadow"
           src={imgExe}
           alt="Exequiel Raineri"
         />
@@ -50,9 +65,12 @@ export const Hero = () => {
           Passionate about technology and looking for constant challenges.
         </p>
         <div
+          style={{
+            transform: "translateZ(20px)",
+          }}
           data-aos="fade-right"
           data-aos-duration="2500"
-          className="redes"
+          className="redes "
         >
           <a
             href="https://www.instagram.com/exeraineri/"
