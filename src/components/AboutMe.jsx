@@ -2,7 +2,7 @@ import "./css/aboutMe.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import imgExeAbout from "../assets/exe.jpg";
+import imgExeAbout from "../assets/exeNieve.webp";
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init();

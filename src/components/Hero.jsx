@@ -3,7 +3,7 @@ import "./css/hero.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import imgExe from "../assets/exe.PNG";
+import imgExe from "../assets/exe.webp";
 import VanillaTilt from "vanilla-tilt";
 
 export const Hero = () => {

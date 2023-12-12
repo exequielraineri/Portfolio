@@ -4,10 +4,10 @@ import "./css/projects.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
-import imgVivero from "../assets/vivero.jpg";
-import imgPuntoVenta from "../assets/ptoVenta.png";
-import imgInventoryPauny from "../assets/inventory.jpg";
-import imgToDoList from "../assets/todoApp.jpg";
+import imgVivero from "../assets/vivero.webp";
+import imgPuntoVenta from "../assets/ptoVenta.webp";
+import imgInventoryPauny from "../assets/inventory.webp";
+import imgToDoList from "../assets/todoApp.webp";
 import VanillaTilt from "vanilla-tilt";
 
 export const Projects = () => {
