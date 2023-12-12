@@ -4,27 +4,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import imgExeAbout from "../assets/exe.jpg";
 export const AboutMe = () => {
-  const mouseMoveImg = (e) => {
-    const imagenCard = document.querySelector(".imagenHero"),
-      rect = imagenCard.getBoundingClientRect();
-
-    const pageX = e.pageX;
-    const pageY = e.pageY;
-
-    const elemX = rect.left + imagenCard.offsetWidth / 2;
-    const elemY = rect.top + imagenCard.offsetHeight / 2;
-
-    const angleX = (elemY - pageY) / 25;
-    const angleY = (elemX - pageX) / 25;
-    imagenCard.style.transform = `rotateX(${angleX}deg) rotateY(${angleY}deg)`;
-  };
-
   useEffect(() => {
     Aos.init();
   }, []);
   return (
     <div
-      onMouseMove={mouseMoveImg}
       data-aos="fade-left"
       data-aos-duration="2000"
       id="about"
@@ -41,6 +25,7 @@ export const AboutMe = () => {
 
       <div className="bloque-parrafo shadow">
         <img
+          loading="eager"
           className="shadow"
           width={100}
           src={imgExeAbout}

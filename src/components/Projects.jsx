@@ -179,6 +179,7 @@ const Proj = ({ project }) => {
       <div className="item shadow">
         <div className="contenido">
           <img
+            loading="eager"
             data-tilt
             data-tilt-scale="1.2"
             data-aos="fade-right"

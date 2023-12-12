@@ -35,6 +35,7 @@ export const Hero = () => {
           className="shadow"
           src={imgExe}
           alt="Exequiel Raineri"
+          loading="eager"
         />
         <h2
           style={{
