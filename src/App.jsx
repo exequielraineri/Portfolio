@@ -8,7 +8,7 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
-import imgFondo from "./assets/fondoBody.jpeg";
+import imgFondo from "./assets/fondoBody.webp";
 import { Link } from "react-scroll";
 function App() {
   window.addEventListener("scroll", function () {
