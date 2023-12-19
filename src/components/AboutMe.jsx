@@ -3,6 +3,10 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import imgExeAbout from "../assets/exeNieve.webp";
+import video1 from "../assets/video1.mp4";
+import video2 from "../assets/video2.mp4";
+import video3 from "../assets/video3.mp4";
+import video4 from "../assets/video4.mp4";
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init();
@@ -60,7 +64,7 @@ export const AboutMe = () => {
           >
             <source
               type="video/mp4"
-              src="src/assets/video1.mp4"
+              src={video1}
             />
           </video>
           <video
@@ -70,7 +74,7 @@ export const AboutMe = () => {
           >
             <source
               type="video/mp4"
-              src="src/assets/video2.mp4"
+              src={video2}
             />
           </video>
           <video
@@ -80,7 +84,7 @@ export const AboutMe = () => {
           >
             <source
               type="video/mp4"
-              src="src/assets/video3.mp4"
+              src={video3}
             />
           </video>
           <video
@@ -90,7 +94,7 @@ export const AboutMe = () => {
           >
             <source
               type="video/mp4"
-              src="src/assets/video4.mp4"
+              src={video4}
             />
           </video>
         </div>
