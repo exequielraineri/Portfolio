@@ -8,8 +8,8 @@ import VanillaTilt from "vanilla-tilt";
 
 export const Hero = () => {
   VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
-    speed: 1000,
-    max: 15,
+    speed: 400,
+    max: 5,
     transition: true,
   });
   useEffect(() => {
@@ -66,37 +66,65 @@ export const Hero = () => {
           Passionate about technology and looking for constant challenges.
         </p>
         <div
+          className="d-flex"
           style={{
-            transform: "translateZ(20px)",
+            width: "80%",
+            justifyContent: "space-between",
           }}
-          data-aos="fade-right"
-          data-aos-duration="2500"
-          className="redes "
         >
-          <a
-            href="https://www.instagram.com/exeraineri/"
-            target="_blank"
-            className="icon-redes"
-            rel="noreferrer"
+          <div
+            style={{
+              transform: "translateZ(20px)",
+            }}
+            data-aos="fade-right"
+            data-aos-duration="2500"
+            className="redes "
           >
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a
-            href="https://github.com/exequielraineri"
-            target="_blank"
-            className="icon-redes"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/exequielraineri/"
-            target="_blank"
-            className="icon-redes"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
+            <a
+              href="https://www.instagram.com/exeraineri/"
+              target="_blank"
+              className="icon-redes"
+              rel="noreferrer"
+            >
+              <i
+                title="Instagram"
+                className="fa-brands fa-instagram"
+              ></i>
+            </a>
+            <a
+              href="https://github.com/exequielraineri"
+              target="_blank"
+              className="icon-redes"
+              rel="noreferrer"
+            >
+              <i
+                title="GitHub"
+                className="fa-brands fa-github"
+              ></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/exequielraineri/"
+              target="_blank"
+              className="icon-redes"
+              rel="noreferrer"
+            >
+              <i
+                title="LinkedIn"
+                className="fa-brands fa-linkedin"
+              ></i>
+            </a>
+          </div>
+          <div>
+            <a
+              title="Resume"
+              rel="noreferrer"
+              target="_blank"
+              href="https://drive.google.com/file/d/1eDwyWor5tiEFpUnr9dKJWL-KzQOV-Ix-/view?usp=sharing"
+              className="btn btn-dark btn-sm shadow"
+            >
+              Resume
+            </a>
+          </div>
         </div>
       </div>
     </div>

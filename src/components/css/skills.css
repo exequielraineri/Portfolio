@@ -4,33 +4,6 @@
   padding-top: 100px;
 }
 
-.bloque-skills .bloque-titulos {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.bloque-skills .bloque-titulos .fondo-titulo {
-  font-size: 5rem;
-  color: #83a5ff;
-  opacity: 5%;
-  margin: 0;
-  padding: 0;
-}
-
-.bloque-skills .bloque-titulos .titulo {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  font-size: 3rem;
-  top: 3rem;
-}
-
-
-
-
 .section-skills {
   margin-top: 50px;
   width: 60%;
@@ -41,7 +14,8 @@
   gap: 20px;
   padding: 20px;
   border-radius: 15px;
-  background-color: #264066;
+  background-color: rgba(38, 64, 102, 0.3);
+  backdrop-filter: blur(5px);
 }
 
 .section-skills .skill-item img {

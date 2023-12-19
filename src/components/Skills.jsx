@@ -23,7 +23,7 @@ export const Skills = () => {
     >
       <div
         data-aos="fade-right"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         className="bloque-titulos"
       >
         <h1 className="fondo-titulo">Skills</h1>
@@ -32,7 +32,7 @@ export const Skills = () => {
       <section className="container section-skills shadow">
         <article
           data-aos="fade-up"
-          data-aos-duration="500"
+          data-aos-duration="300"
           className="skill-item"
         >
           <img
@@ -43,7 +43,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="700"
+          data-aos-duration="400"
           className="skill-item"
         >
           <img
@@ -54,7 +54,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="1000"
+          data-aos-duration="500"
           className="skill-item"
         >
           <img
@@ -65,7 +65,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="1200"
+          data-aos-duration="600"
           className="skill-item"
         >
           <img
@@ -76,7 +76,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="1400"
+          data-aos-duration="700"
           className="skill-item"
         >
           <img
@@ -87,7 +87,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="1600"
+          data-aos-duration="800"
           className="skill-item"
         >
           <img
@@ -98,7 +98,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="1800"
+          data-aos-duration="900"
           className="skill-item"
         >
           <img
@@ -109,7 +109,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           className="skill-item"
         >
           <img
@@ -120,7 +120,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="2200"
+          data-aos-duration="1100"
           className="skill-item"
         >
           <img
@@ -131,7 +131,7 @@ export const Skills = () => {
         </article>
         <article
           data-aos="fade-up"
-          data-aos-duration="2400"
+          data-aos-duration="1200"
           className="skill-item"
         >
           <img

@@ -17,7 +17,7 @@ export const AboutMe = () => {
       <div
         data-aos="fade-left"
         data-aos-duration="2500"
-        className="bloque-titulos "
+        className="bloque-titulos"
       >
         <h1 className="fondo-titulo">About Me</h1>
         <h2 className="titulo">About Me</h2>
@@ -26,7 +26,7 @@ export const AboutMe = () => {
       <div className="bloque-parrafo shadow">
         <img
           loading="eager"
-          className="shadow"
+          className="shadow imagen-about"
           width={100}
           src={imgExeAbout}
           alt="Exequiel"
@@ -52,6 +52,48 @@ export const AboutMe = () => {
           forward to meeting the <b>challenges</b> and <b>opportunities</b>ahead
           in the ever-evolving field of technology.
         </p>
+        <div className="bloque-videos">
+          <video
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              type="video/mp4"
+              src="src/assets/video1.mp4"
+            />
+          </video>
+          <video
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              type="video/mp4"
+              src="src/assets/video2.mp4"
+            />
+          </video>
+          <video
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              type="video/mp4"
+              src="src/assets/video3.mp4"
+            />
+          </video>
+          <video
+            autoPlay
+            muted
+            loop
+          >
+            <source
+              type="video/mp4"
+              src="src/assets/video4.mp4"
+            />
+          </video>
+        </div>
       </div>
     </div>
   );

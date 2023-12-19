@@ -3,31 +3,10 @@
   margin: 60px auto;
   padding-top: 100px;
   min-height: 60vh;
+  padding: 30px;
+
 }
 
-.bloque-experience .bloque-titulos {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.bloque-experience .bloque-titulos .fondo-titulo {
-  font-size: 4rem;
-  color: #83a5ff;
-  opacity: 5%;
-  margin: 0;
-  padding: 0;
-}
-
-.bloque-experience .bloque-titulos .titulo {
-  position: absolute;
-  text-align: end;
-  width: 90%;
-  color: #fff;
-  font-size: 3rem;
-  top: 3rem;
-}
 
 
 
@@ -36,10 +15,18 @@
   width: 70%;
   padding: 20px;
   font-size: .8rem;
-  background-color: #264066;
+  background-color: transparent;
   border-radius: 10px;
   color: #fff;
   position: relative;
+  border: #264066 1px solid;
+  backdrop-filter: blur(10px);
+
+}
+
+.bloque-experience .bloque-texto:hover {
+  background-color: rgba(38, 64, 102, 0.5);
+  transition: all .3s;
 }
 
 
@@ -93,11 +80,6 @@
 
   .bloque-experience .progreso {
     right: -9%;
-  }
-
-  .bloque-experience .bloque-titulos .fondo-titulo {
-    width: 100%;
-    font-size: 4rem;
   }
 
 

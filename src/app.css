@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 
@@ -19,15 +20,13 @@ body {
       #090e16);
 }
 
-
 .imagenFondoBody {
-  width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   opacity: 10%;
-  background-size: cover;
-  background-position: center;
   z-index: -1;
+  width: 100%;
+  filter: blur(2px);
 }
 
 
@@ -43,4 +42,73 @@ body {
 .btnFloating.aparecer {
   bottom: 10%;
   opacity: 1;
+}
+
+
+
+
+
+.bloque-titulos {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.bloque-titulos .fondo-titulo {
+  width: 100%;
+  font-size: 4em;
+  text-wrap: nowrap;
+  color: #83a5ff;
+  opacity: 20%;
+  filter: blur(3px);
+  font-weight: 900;
+}
+
+.bloque-titulos .titulo {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  font-size: 2em;
+  color: #fff;
+  font-weight: 900;
+}
+
+.bloque-titulos .titulo::after {
+  content: "";
+  width: 20%;
+  height: 5px;
+  border-radius: 1000px;
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+  .bloque-titulos .fondo-titulo {
+    width: 100%;
+    font-size: 6em;
+    text-wrap: nowrap;
+    color: #83a5ff;
+    opacity: 20%;
+    filter: blur(3px);
+    font-weight: 900;
+  }
+
+  .bloque-titulos .titulo {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    width: 100%;
+    font-size: 3em;
+    color: #fff;
+    font-weight: 900;
+  }
+
+  .imagenFondoBody {
+    top: -50%;
+  }
+
 }

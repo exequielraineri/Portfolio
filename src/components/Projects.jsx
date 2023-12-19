@@ -122,7 +122,7 @@ export const Projects = () => {
     >
       <div
         id="projects"
-        className="container bloque-projects"
+        className="container "
       >
         <div
           data-aos="fade-right"
@@ -132,17 +132,19 @@ export const Projects = () => {
           <h1 className="fondo-titulo">Projects</h1>
           <h2 className="titulo">Projects</h2>
         </div>
-        {projects.map((project, index) => {
-          if (index >= cantidadMostrar) {
-            return;
-          }
-          return (
-            <Proj
-              key={index}
-              project={project}
-            ></Proj>
-          );
-        })}
+        <div className="bloque-projects">
+          {projects.map((project, index) => {
+            if (index >= cantidadMostrar) {
+              return;
+            }
+            return (
+              <Proj
+                key={index}
+                project={project}
+              ></Proj>
+            );
+          })}
+        </div>
       </div>
       <button
         data-aos="fade-right"
@@ -176,7 +178,7 @@ const Proj = ({ project }) => {
       data-aos-duration="200"
       className="bloque-items "
     >
-      <div className="item shadow">
+      <div className="item">
         <div className="contenido">
           <img
             loading="eager"
@@ -229,7 +231,7 @@ const Proj = ({ project }) => {
           </div>
           <div
             data-aos="fade-left"
-            data-aos-duration="2000"
+            data-aos-duration="200"
           >
             <a
               target="_blank"

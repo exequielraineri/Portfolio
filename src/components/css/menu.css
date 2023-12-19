@@ -77,3 +77,20 @@
   transition-delay: 0s;
   color: white;
 }
+
+
+.bloque-menu .logo-exe::after {
+  content: "";
+  width: 10%;
+  display: block;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+  background-color: #83a4ff;
+  transition: all .3s;
+}
+
+.bloque-menu .logo-exe:hover::after {
+  width: 100%;
+
+}
