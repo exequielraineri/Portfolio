@@ -44,11 +44,13 @@ export const CarruselVideo = () => {
         >
           <video
             className="video"
-            src={video1}
             muted
             autoPlay
             loop
-          ></video>
+            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+          >
+            <source src={video1} />
+          </video>
         </swiper-slide>
         <swiper-slide
           style={{
@@ -60,11 +62,13 @@ export const CarruselVideo = () => {
         >
           <video
             className="video"
-            src={video2}
             muted
             autoPlay
             loop
-          ></video>
+            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+          >
+            <source src={video2} />
+          </video>
         </swiper-slide>
         <swiper-slide
           style={{
@@ -76,11 +80,16 @@ export const CarruselVideo = () => {
         >
           <video
             className="video"
-            src={video3}
             muted
             autoPlay
             loop
-          ></video>
+            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+          >
+            <source
+              src={video3}
+              type="video/mp4"
+            />
+          </video>
         </swiper-slide>
         <swiper-slide
           style={{
@@ -91,12 +100,14 @@ export const CarruselVideo = () => {
           }}
         >
           <video
-            loop
             className="video"
-            src={video4}
             muted
             autoPlay
-          ></video>
+            loop
+            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+          >
+            <source src={video4} />
+          </video>
         </swiper-slide>
       </swiper-container>
     </div>
