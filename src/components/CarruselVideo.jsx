@@ -45,9 +45,8 @@ export const CarruselVideo = () => {
           <video
             className="video"
             muted
-            autoPlay
+            controls
             loop
-            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
           >
             <source src={video1} />
           </video>
@@ -63,9 +62,8 @@ export const CarruselVideo = () => {
           <video
             className="video"
             muted
-            autoPlay
+            controls
             loop
-            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
           >
             <source src={video2} />
           </video>
@@ -81,9 +79,8 @@ export const CarruselVideo = () => {
           <video
             className="video"
             muted
-            autoPlay
+            controls
             loop
-            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
           >
             <source
               src={video3}
@@ -102,9 +99,8 @@ export const CarruselVideo = () => {
           <video
             className="video"
             muted
-            autoPlay
             loop
-            controlsList="nofullscreen nodownload noremoteplayback noplaybackrate foobar"
+            controls
           >
             <source src={video4} />
           </video>
