@@ -3,10 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import imgExeAbout from "../assets/exeNieve.webp";
-import video1 from "../assets/video1.mp4";
-import video2 from "../assets/video2.mp4";
-import video3 from "../assets/video3.mp4";
-import video4 from "../assets/video4.mp4";
+import { CarruselVideo } from "./CarruselVideo";
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init();
@@ -56,48 +53,7 @@ export const AboutMe = () => {
           forward to meeting the <b>challenges</b> and <b>opportunities</b>ahead
           in the ever-evolving field of technology.
         </p>
-        <div className="bloque-videos">
-          <video
-            autoPlay
-            muted
-            loop
-          >
-            <source
-              type="video/mp4"
-              src={video1}
-            />
-          </video>
-          <video
-            autoPlay
-            muted
-            loop
-          >
-            <source
-              type="video/mp4"
-              src={video2}
-            />
-          </video>
-          <video
-            autoPlay
-            muted
-            loop
-          >
-            <source
-              type="video/mp4"
-              src={video3}
-            />
-          </video>
-          <video
-            autoPlay
-            muted
-            loop
-          >
-            <source
-              type="video/mp4"
-              src={video4}
-            />
-          </video>
-        </div>
+        <CarruselVideo></CarruselVideo>
       </div>
     </div>
   );

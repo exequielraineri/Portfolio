@@ -43,26 +43,19 @@
 
 }
 
-.bloque-aboutMe .bloque-videos {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 80%;
-  margin: 20px 0 0 auto;
-  gap: 30px;
-}
 
-.bloque-videos video {
+
+.bloque-aboutMe video {
   width: 100%;
   border-radius: 10px;
   transition: all .5s;
-  opacity: 50%;
-
+  max-width: 200px;
 }
 
-.bloque-videos video:hover {
-  opacity: 100%;
-
+.carrusel_video {
+  margin: 10px auto;
 }
+
 
 
 
@@ -104,12 +97,8 @@
     width: 80%;
   }
 
-  .bloque-aboutMe .bloque-videos {
-    margin: 20px auto;
-  }
-
-  .bloque-videos video {
-    width: 100%;
+  .carrusel_video {
+    margin: 10px auto;
   }
 
 
@@ -125,12 +114,9 @@
     height: 25rem;
   }
 
-  .bloque-aboutMe .bloque-videos {
-    grid-template-columns: repeat(4, 1fr);
+  .carrusel_video {
+    margin: 10px 0 10px auto;
   }
 
-  .bloque-videos video {
-    width: 100%;
-  }
 
 }
