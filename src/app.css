@@ -15,9 +15,12 @@ body {
 
 body {
   position: relative;
-  background: linear-gradient(120deg,
-      #1b2941,
-      #090e16);
+  background: linear-gradient(180deg,
+      #121212,
+      black);
+
+  /* background-color: #121212; */
+
 }
 
 .imagenFondoBody {

@@ -8,14 +8,16 @@
 
 
 .bloque-aboutMe .bloque-parrafo {
-  background-color: #264066;
+  /* background-color: #264066; */
+  background-color: #2640661f;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   color: #fff;
   width: 90%;
   margin-left: auto;
 
-
+  border: #264066 1px solid;
+  box-shadow: 0 0 5px white;
 
 }
 
@@ -30,7 +32,7 @@
   width: 10rem;
   height: 13rem;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   top: 4rem;
   left: -1rem;
   filter: grayscale(80%);
@@ -44,17 +46,6 @@
 }
 
 
-
-.bloque-aboutMe video {
-  width: 100%;
-  border-radius: 10px;
-  transition: all .5s;
-  max-width: 200px;
-}
-
-.carrusel_video {
-  margin: 10px auto;
-}
 
 
 
@@ -97,9 +88,7 @@
     width: 80%;
   }
 
-  .carrusel_video {
-    margin: 10px auto;
-  }
+
 
 
 
@@ -114,9 +103,7 @@
     height: 25rem;
   }
 
-  .carrusel_video {
-    margin: 10px 0 10px auto;
-  }
+
 
 
 }

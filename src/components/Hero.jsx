@@ -39,13 +39,19 @@ export const Hero = () => {
         />
         <h2
           style={{
+            fontWeight: "100",
             margin: 0,
             padding: 0,
           }}
         >
           I`m{" "}
-          <span>
-            <b>Exequiel Raineri</b>
+          <span
+            style={{
+              fontSize: "1em",
+              fontWeight: "bold",
+            }}
+          >
+            Exequiel Raineri
           </span>{" "}
         </h2>
         <h3
@@ -120,7 +126,10 @@ export const Hero = () => {
               rel="noreferrer"
               target="_blank"
               href="https://drive.google.com/file/d/1eDwyWor5tiEFpUnr9dKJWL-KzQOV-Ix-/view?usp=sharing"
-              className="btn btn-dark btn-sm shadow"
+              className="btn btn-info btn-sm shadow"
+              style={{
+                fontWeight: "bold",
+              }}
             >
               Resume
             </a>

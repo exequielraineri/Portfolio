@@ -17,7 +17,7 @@
 .bloque-projects .bloque-items .item {
   background-color: rgba(38, 64, 102, 0.3);
   color: #fff;
-  border-radius: 15px;
+  border-radius: 5px;
   height: 100%;
   width: 100%;
   padding: 20px 30px;
@@ -39,7 +39,7 @@
   object-fit: cover;
   width: 80%;
   margin: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
   filter: grayscale(40%);
   transition: all 3s;

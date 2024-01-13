@@ -10,8 +10,13 @@ export const Menu = () => {
       className=" bloque-menu"
     >
       <Container>
-        <Navbar.Brand className="logo-exe">Exequiel Raineri</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Brand className="logo-exe text-light">
+          Exequiel Raineri
+        </Navbar.Brand>
+        <Navbar.Toggle
+          className="bg-light"
+          aria-controls="basic-navbar-nav"
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto items">
             <Nav>

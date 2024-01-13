@@ -30,11 +30,6 @@ function App() {
       <Projects></Projects>
       <Skills></Skills>
       <Footer></Footer>
-      <img
-        className="imagenFondoBody"
-        src={imgFondo}
-        alt="Fondo"
-      />
 
       <Link
         id="btnFloating"

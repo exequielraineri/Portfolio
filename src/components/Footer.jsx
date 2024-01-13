@@ -3,7 +3,7 @@ export const Footer = () => {
   return (
     <footer className="shadow-lg">
       <p>Developed by Exequiel Raineri</p>
-      <p>Copyright 2023 Exequiel Raineri</p>
+      <p>Copyright 2024 Exequiel Raineri</p>
       <div className="footer-redes">
         <a
           target="_blank"

@@ -3,7 +3,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import imgExeAbout from "../assets/exeNieve.webp";
-import { CarruselVideo } from "./CarruselVideo";
 export const AboutMe = () => {
   useEffect(() => {
     Aos.init();
@@ -53,7 +52,6 @@ export const AboutMe = () => {
           forward to meeting the <b>challenges</b> and <b>opportunities</b>ahead
           in the ever-evolving field of technology.
         </p>
-        <CarruselVideo></CarruselVideo>
       </div>
     </div>
   );
