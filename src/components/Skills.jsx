@@ -1,7 +1,7 @@
 import "./css/skills.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import java from "../assets/java_original.png";
 import css from "../assets/css.png";
 import figma from "../assets/figma.png";
@@ -12,22 +12,32 @@ import mysql from "../assets/mysql.png";
 import react from "../assets/react.png";
 import spring from "../assets/spring.png";
 import html from "../assets/html.png";
+import { counterContext } from "../context/contextCounter";
 export const Skills = () => {
+  const {
+    value: { isEnglish },
+  } = useContext(counterContext);
   useEffect(() => {
     Aos.init();
   }, []);
   return (
-    <div
-      id="skills"
-      className="bloque-skills"
-    >
+    <div id="skills" className="bloque-skills">
       <div
         data-aos="fade-right"
         data-aos-duration="1000"
         className="bloque-titulos"
       >
-        <h1 className="fondo-titulo">Skills</h1>
-        <h2 className="titulo">Skills</h2>
+        {isEnglish ? (
+          <>
+            <h1 className="fondo-titulo">Skills</h1>
+            <h2 className="titulo">Skills</h2>
+          </>
+        ) : (
+          <>
+            <h1 className="fondo-titulo">Habilidades</h1>
+            <h2 className="titulo">Habilidades</h2>
+          </>
+        )}
       </div>
       <section className="container section-skills shadow">
         <article
@@ -35,10 +45,7 @@ export const Skills = () => {
           data-aos-duration="300"
           className="skill-item"
         >
-          <img
-            src={java}
-            alt="java"
-          />
+          <img src={java} alt="java" />
           <p>Java</p>
         </article>
         <article
@@ -46,10 +53,7 @@ export const Skills = () => {
           data-aos-duration="400"
           className="skill-item"
         >
-          <img
-            src={mysql}
-            alt="Mysql"
-          />
+          <img src={mysql} alt="Mysql" />
           <p>MySql</p>
         </article>
         <article
@@ -57,10 +61,7 @@ export const Skills = () => {
           data-aos-duration="500"
           className="skill-item"
         >
-          <img
-            src={spring}
-            alt="Spring"
-          />
+          <img src={spring} alt="Spring" />
           <p>Spring</p>
         </article>
         <article
@@ -68,10 +69,7 @@ export const Skills = () => {
           data-aos-duration="600"
           className="skill-item"
         >
-          <img
-            src={html}
-            alt="HTML"
-          />
+          <img src={html} alt="HTML" />
           <p>HTML</p>
         </article>
         <article
@@ -79,10 +77,7 @@ export const Skills = () => {
           data-aos-duration="700"
           className="skill-item"
         >
-          <img
-            src={css}
-            alt="CSS"
-          />
+          <img src={css} alt="CSS" />
           <p>CSS</p>
         </article>
         <article
@@ -90,10 +85,7 @@ export const Skills = () => {
           data-aos-duration="800"
           className="skill-item"
         >
-          <img
-            src={javascript}
-            alt="Javascript"
-          />
+          <img src={javascript} alt="Javascript" />
           <p>Javascript</p>
         </article>
         <article
@@ -101,10 +93,7 @@ export const Skills = () => {
           data-aos-duration="900"
           className="skill-item"
         >
-          <img
-            src={react}
-            alt="React Js"
-          />
+          <img src={react} alt="React Js" />
           <p>React Js</p>
         </article>
         <article
@@ -112,10 +101,7 @@ export const Skills = () => {
           data-aos-duration="1000"
           className="skill-item"
         >
-          <img
-            src={figma}
-            alt="Figma"
-          />
+          <img src={figma} alt="Figma" />
           <p>Figma</p>
         </article>
         <article
@@ -123,10 +109,7 @@ export const Skills = () => {
           data-aos-duration="1100"
           className="skill-item"
         >
-          <img
-            src={github}
-            alt="GitHub"
-          />
+          <img src={github} alt="GitHub" />
           <p>GitHub</p>
         </article>
         <article
@@ -134,10 +117,7 @@ export const Skills = () => {
           data-aos-duration="1200"
           className="skill-item"
         >
-          <img
-            src={bootstrap}
-            alt="Bootstrap"
-          />
+          <img src={bootstrap} alt="Bootstrap" />
           <p>Bootstrap</p>
         </article>
       </section>

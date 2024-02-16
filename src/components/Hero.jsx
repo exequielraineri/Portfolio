@@ -1,12 +1,16 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import "./css/hero.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 import imgExe from "../assets/exe.webp";
 import VanillaTilt from "vanilla-tilt";
+import { counterContext } from "../context/contextCounter";
 
 export const Hero = () => {
+  const {
+    value: { isEnglish },
+  } = useContext(counterContext);
   VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
     speed: 400,
     max: 5,
@@ -44,7 +48,7 @@ export const Hero = () => {
             padding: 0,
           }}
         >
-          I`m{" "}
+          {isEnglish ? `I'm` : "Soy"}{" "}
           <span
             style={{
               fontSize: "1em",
@@ -69,7 +73,9 @@ export const Hero = () => {
             marginTop: 15,
           }}
         >
-          Passionate about technology and looking for constant challenges.
+          {isEnglish
+            ? "Passionate about technology and looking for constant challenges."
+            : "Apasionado por la tecnología y en búsqueda de desafíos constantes."}
         </p>
         <div
           className="d-flex"
@@ -92,10 +98,7 @@ export const Hero = () => {
               className="icon-redes"
               rel="noreferrer"
             >
-              <i
-                title="Instagram"
-                className="fa-brands fa-instagram"
-              ></i>
+              <i title="Instagram" className="fa-brands fa-instagram"></i>
             </a>
             <a
               href="https://github.com/exequielraineri"
@@ -103,10 +106,7 @@ export const Hero = () => {
               className="icon-redes"
               rel="noreferrer"
             >
-              <i
-                title="GitHub"
-                className="fa-brands fa-github"
-              ></i>
+              <i title="GitHub" className="fa-brands fa-github"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/exequielraineri/"
@@ -114,10 +114,7 @@ export const Hero = () => {
               className="icon-redes"
               rel="noreferrer"
             >
-              <i
-                title="LinkedIn"
-                className="fa-brands fa-linkedin"
-              ></i>
+              <i title="LinkedIn" className="fa-brands fa-linkedin"></i>
             </a>
           </div>
           <div>
@@ -131,7 +128,7 @@ export const Hero = () => {
                 fontWeight: "bold",
               }}
             >
-              Resume
+              {isEnglish ? "Resume" : "CV"}
             </a>
           </div>
         </div>

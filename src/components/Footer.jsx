@@ -1,9 +1,24 @@
+import { useContext } from "react";
 import "./css/footer.css";
+import { counterContext } from "../context/contextCounter";
 export const Footer = () => {
+  const {
+    value: { isEnglish },
+  } = useContext(counterContext);
   return (
     <footer className="shadow-lg">
-      <p>Developed by Exequiel Raineri</p>
-      <p>Copyright 2024 Exequiel Raineri</p>
+      {isEnglish ? (
+        <>
+          <p>Developed by Exequiel Raineri</p>
+          <p>Copyright 2024 Exequiel Raineri</p>
+        </>
+      ) : (
+        <>
+          <p>Desarrollado por Exequiel Raineri</p>
+          <p>Copyright 2024 Exequiel Raineri</p>
+        </>
+      )}
+
       <div className="footer-redes">
         <a
           target="_blank"

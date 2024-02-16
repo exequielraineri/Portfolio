@@ -54,9 +54,25 @@
   color: white;
 }
 
+.bloque-menu .about.isSpain:hover::after {
+  content: "Sobre Mi";
+  width: 100%;
+  max-width: 200px;
+  transition-delay: 0s;
+  color: white;
+}
+
 
 .bloque-menu .experience:hover::after {
   content: "Experience";
+  width: 100%;
+  max-width: 200px;
+  transition-delay: 0s;
+  color: white;
+}
+
+.bloque-menu .experience.isSpain:hover::after {
+  content: "Experiencia";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
@@ -71,8 +87,24 @@
   color: white;
 }
 
+.bloque-menu .projects.isSpain:hover::after {
+  content: "Proyectos";
+  width: 100%;
+  max-width: 200px;
+  transition-delay: 0s;
+  color: white;
+}
+
 .bloque-menu .skills:hover::after {
   content: "Skills";
+  width: 100%;
+  max-width: 200px;
+  transition-delay: 0s;
+  color: white;
+}
+
+.bloque-menu .skills.isSpain:hover::after {
+  content: "Habilidades";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
