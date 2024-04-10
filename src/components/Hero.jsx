@@ -122,7 +122,7 @@ export const Hero = () => {
               title="Resume"
               rel="noreferrer"
               target="_blank"
-              href="https://drive.google.com/file/d/1eDwyWor5tiEFpUnr9dKJWL-KzQOV-Ix-/view?usp=sharing"
+              href="https://drive.google.com/file/d/1vy22WDL6IB1k-7OqfYwjIKc7XZS3xvZ-/view?usp=sharing"
               className="btn btn-info btn-sm shadow"
               style={{
                 fontWeight: "bold",

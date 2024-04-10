@@ -12,6 +12,7 @@ import mysql from "../assets/mysql.png";
 import react from "../assets/react.png";
 import spring from "../assets/spring.png";
 import html from "../assets/html.png";
+import docker from "../assets/docker-solo.png";
 import { counterContext } from "../context/contextCounter";
 export const Skills = () => {
   const {
@@ -119,6 +120,20 @@ export const Skills = () => {
         >
           <img src={bootstrap} alt="Bootstrap" />
           <p>Bootstrap</p>
+        </article>
+        <article
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          className="skill-item"
+        >
+          <img
+            src={docker}
+            alt="Bootstrap"
+            style={{
+              width: "100px",
+            }}
+          />
+          <p>Docker</p>
         </article>
       </section>
     </div>
