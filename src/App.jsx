@@ -11,6 +11,7 @@ import { Footer } from "./components/Footer";
 import { Link } from "react-scroll";
 import video1 from "./assets/video-fondo1.mp4";
 import video2 from "./assets/video-fondo2.mp4";
+import { HeroV2 } from "./components/HeroV2/HeroV2";
 
 function App() {
   window.addEventListener("scroll", function () {
@@ -23,6 +24,7 @@ function App() {
       botonFloating.classList.remove("aparecer");
     }
   });
+
   return (
     <>
       <div
@@ -30,7 +32,7 @@ function App() {
           position: "relative",
         }}
       >
-        <video
+        {/* <video
           src={video2}
           loop={true}
           autoPlay={true}
@@ -46,13 +48,20 @@ function App() {
             objectFit: "cover",
             objectPosition: "center",
           }}
-        ></video>
+        ></video> */}
         <Menu></Menu>
-        <Hero></Hero>
-        <AboutMe></AboutMe>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Skills></Skills>
+        {/* <Hero></Hero> */}
+        <HeroV2></HeroV2>
+        <main
+          style={{
+            backgroundColor: "#050505",
+          }}
+        >
+          <AboutMe></AboutMe>
+          <Experience></Experience>
+          <Projects></Projects>
+          <Skills></Skills>
+        </main>
         <Footer></Footer>
 
         <Link

@@ -420,7 +420,7 @@ const Proj = ({ project }) => {
       className="bloque-items p-0 m-0 "
     >
       <div className="item">
-        <div className="contenido ">
+        <div className="contenido py-3">
           <img
             loading="eager"
             data-tilt
@@ -464,18 +464,29 @@ const Proj = ({ project }) => {
             </ul>
           </p>
         </div>
-        <div className="item-caracteristicas">
-          <div data-aos="fade-right" data-aos-duration="200">
+        <div className="item-caracteristicas d-flex flex-column gap-3 flex-wrap">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="200"
+            style={{
+              borderBottom: "solid 1px rgba(255,255,255,.2)",
+            }}
+            className="w-100 pb-2"
+          >
             {project?.tools?.map((tool, index) => {
               return tool;
             })}
           </div>
-          <div data-aos="fade-left" data-aos-duration="200">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="200"
+            className="w-100 justify-content-end"
+          >
             <a
               target="_blank"
               rel="noreferrer"
               href={project?.web?.url}
-              className="btn btn-sm btn-primary shadow px-3"
+              className="btn btn-sm btn-primary shadow px-3 rounded-1 "
               style={{
                 borderRadius: "10px",
               }}

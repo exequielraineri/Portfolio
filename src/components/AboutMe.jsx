@@ -16,7 +16,7 @@ export const AboutMe = () => {
       data-aos="fade-left"
       data-aos-duration="2000"
       id="about"
-      className="container bloque-aboutMe"
+      className="container bloque-aboutMe pt-5"
     >
       <div
         data-aos="fade-left"
@@ -36,7 +36,7 @@ export const AboutMe = () => {
         )}
       </div>
 
-      <div className="bloque-parrafo shadow">
+      <div className="bloque-parrafo shadow py-3">
         <img
           loading="eager"
           className="shadow imagen-about"

@@ -2,7 +2,6 @@
   margin: 30px auto;
   position: relative;
   min-height: 60vh;
-
 }
 
 
@@ -10,7 +9,8 @@
 .bloque-aboutMe .bloque-parrafo {
   /* background-color: #264066; */
   /* background-color: #2640661f; */
-  background-color: rgba(0,0, 0, 1);
+  /* background-color: rgba(0,0, 0, 1); */
+  background: linear-gradient(130deg,rgba(38, 64, 102, 0.1) 50%,rgba(38, 64, 102, .4) );
   padding: 20px;
   border-radius: 5px;
   color: #fff;
