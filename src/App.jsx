@@ -32,17 +32,14 @@ function App() {
       >
         <video
           src={video2}
-          loop
-          autoPlay
-          muted
-          controls={false}
-          onFocus={false}
-          onFocusCapture={false}
+          loop={true}
+          autoPlay={true}
+          muted={true}
           width={"100%"}
           height={"100%"}
           style={{
             maxWidth: "700px",
-            opacity: 0.2,
+            opacity: 0.05,
             position: "fixed",
             top: 0,
             right: 0,

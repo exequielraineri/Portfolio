@@ -24,6 +24,7 @@ import {
 } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa";
 import { counterContext } from "../context/contextCounter";
+import { Carrusel } from "./Carrusel/Carrusel";
 export const Projects = () => {
   const {
     value: { isEnglish },
@@ -384,6 +385,7 @@ export const Projects = () => {
                 return <Proj key={index} project={prod}></Proj>;
               })}
         </section>
+        {/* <Carrusel products={productos}></Carrusel> */}
       </div>
       {/* <button
         data-aos="fade-right"
@@ -473,7 +475,7 @@ const Proj = ({ project }) => {
               target="_blank"
               rel="noreferrer"
               href={project?.web?.url}
-              className="btn btn-sm btn-primary shadow"
+              className="btn btn-sm btn-primary shadow px-3"
               style={{
                 borderRadius: "10px",
               }}

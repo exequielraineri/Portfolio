@@ -35,13 +35,13 @@
   border-radius: 5px;
   top: 4rem;
   left: -1rem;
-  filter: grayscale(80%);
+  filter: grayscale(20%);
   transition: all .3s;
 }
 
 .bloque-aboutMe .bloque-parrafo:hover img {
   filter: grayscale(0%);
-  transform: scale(1.1);
+  /* transform: scale(1.03); */
 
 }
 
@@ -66,7 +66,7 @@
   .bloque-aboutMe img {
     position: relative;
     width: 80%;
-    height: 30vh;
+    height: 40vh;
     top: 0;
     left: 0;
     margin: 10px 0;
