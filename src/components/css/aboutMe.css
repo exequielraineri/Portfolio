@@ -9,13 +9,13 @@
 
 .bloque-aboutMe .bloque-parrafo {
   /* background-color: #264066; */
-  background-color: #2640661f;
+  /* background-color: #2640661f; */
+  background-color: rgba(0,0, 0, 1);
   padding: 20px;
   border-radius: 5px;
   color: #fff;
   width: 90%;
   margin-left: auto;
-
   border: #264066 1px solid;
   box-shadow: 0 0 5px white;
 
@@ -65,8 +65,8 @@
 
   .bloque-aboutMe img {
     position: relative;
-    width: 6rem;
-    height: 9rem;
+    width: 80%;
+    height: 30vh;
     top: 0;
     left: 0;
     margin: 10px 0;

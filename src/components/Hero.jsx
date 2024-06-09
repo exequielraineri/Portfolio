@@ -24,7 +24,7 @@ export const Hero = () => {
       data-aos="fade-right"
       data-aos-duration="2000"
       id="hero"
-      className="container bloque-hero"
+      className="container bloque-hero bg-transparent"
     >
       <div
         data-tilt

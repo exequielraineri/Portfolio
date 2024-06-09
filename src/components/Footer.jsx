@@ -10,12 +10,12 @@ export const Footer = () => {
       {isEnglish ? (
         <>
           <p>Developed by Exequiel Raineri</p>
-          <p>Copyright 2024 Exequiel Raineri</p>
+          <p> 2024</p>
         </>
       ) : (
         <>
           <p>Desarrollado por Exequiel Raineri</p>
-          <p>Copyright 2024 Exequiel Raineri</p>
+          <p>2024</p>
         </>
       )}
 

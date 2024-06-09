@@ -40,7 +40,6 @@ export const AboutMe = () => {
         <img
           loading="eager"
           className="shadow imagen-about"
-          width={100}
           src={imgExeAbout}
           alt="Exequiel"
         />
