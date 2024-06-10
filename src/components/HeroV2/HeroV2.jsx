@@ -24,6 +24,7 @@ export const HeroV2 = () => {
         width={"100%"}
         src="./programmer.jpg"
         alt="Fondo Body"
+        loading="eager"
       />
       <div
         style={{

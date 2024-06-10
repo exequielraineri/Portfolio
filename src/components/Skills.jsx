@@ -21,7 +21,7 @@ export const Skills = () => {
     },
     {
       title: "Spring",
-      icon: <img src="/public/spring.png" alt="Spring Boot" />,
+      icon: <img src="./spring.png" alt="Spring Boot" />,
     },
     {
       title: "MySql",
