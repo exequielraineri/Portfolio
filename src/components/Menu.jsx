@@ -11,7 +11,7 @@ export const Menu = () => {
   } = useContext(counterContext);
 
   return (
-    <Navbar expand="lg" className=" bloque-menu">
+    <Navbar expand="lg" className=" bloque-menu bg-black">
       <Container>
         <Navbar.Brand className="logo-exe text-light">
           Exequiel Raineri
@@ -71,14 +71,6 @@ export const Menu = () => {
               >
                 {isEnglish ? "Skills" : "Habilidades"}
               </Link>
-            </Nav>
-            <Nav>
-              <a
-                className="underline btn btn-sm btn-outline-secondary w-100 text-start"
-                onClick={() => setIsEnglish(!isEnglish)}
-              >
-                {isEnglish ? "ES" : "EN"}
-              </a>
             </Nav>
           </Nav>
         </Navbar.Collapse>

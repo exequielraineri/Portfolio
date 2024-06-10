@@ -3,10 +3,10 @@ import "./css/footer.css";
 import { counterContext } from "../context/contextCounter";
 export const Footer = () => {
   const {
-    value: { isEnglish },
+    value: { isEnglish, setIsEnglish },
   } = useContext(counterContext);
   return (
-    <footer className="shadow-lg">
+    <footer className="bg-black">
       {isEnglish ? (
         <>
           <p>Developed by Exequiel Raineri</p>
@@ -47,6 +47,16 @@ export const Footer = () => {
           href="mailto:exeraineri15@gmail.com"
         >
           <i className="fa-regular fa-envelope"></i>
+        </a>
+        <a
+          style={{
+            cursor: "pointer",
+          }}
+          title={isEnglish ? "Language" : "Idioma"}
+          className="link-secondary  text-decoration-none "
+          onClick={() => setIsEnglish(!isEnglish)}
+        >
+          {isEnglish ? "| ES" : "| EN"}
         </a>
       </div>
     </footer>

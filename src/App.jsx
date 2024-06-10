@@ -9,6 +9,8 @@ import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
 import { Link } from "react-scroll";
 import { HeroV2 } from "./components/HeroV2/HeroV2";
+import { Analytics } from "@vercel/analytics/react";
+import { FaArrowUp } from "react-icons/fa";
 
 function App() {
   window.addEventListener("scroll", function () {
@@ -23,13 +25,15 @@ function App() {
   });
 
   return (
-    <>
-      <div
-        style={{
-          position: "relative",
-        }}
-      >
-        {/* <video
+    <div
+      style={
+        {
+          // position: "relative",
+          // backgroundColor: "#000011",
+        }
+      }
+    >
+      {/* <video
           src={video2}
           loop={true}
           autoPlay={true}
@@ -46,34 +50,36 @@ function App() {
             objectPosition: "center",
           }}
         ></video> */}
-        <Menu></Menu>
-        {/* <Hero></Hero> */}
-        <HeroV2></HeroV2>
-        <main
-          style={{
-            backgroundColor: "#050505",
-          }}
-        >
-          <AboutMe></AboutMe>
-          <Experience></Experience>
-          <Projects></Projects>
-          <Skills></Skills>
-        </main>
-        <Footer></Footer>
+      {/* <Hero></Hero> */}
 
+      <Menu></Menu>
+      {/* <Analytics /> */}
+      <HeroV2></HeroV2>
+      <main
+        style={{
+          // backgroundColor: "#000011",
+          background: "linear-gradient(to bottom,  transparent,#000011 4%)",
+        }}
+      >
+        <AboutMe></AboutMe>
+        <Experience></Experience>
+        <Projects></Projects>
+        <Skills></Skills>
+        <Footer></Footer>
         <Link
           id="btnFloating"
           className="btn btn-light shadow btnFloating"
+          style={{}}
           to="hero"
           spy={true}
           smooth={true}
           offset={-100}
           duration={500}
         >
-          <i className="fa-solid fa-arrow-up"></i>
+          <FaArrowUp />
         </Link>
-      </div>
-    </>
+      </main>
+    </div>
   );
 }
 

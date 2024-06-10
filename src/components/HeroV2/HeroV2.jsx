@@ -7,14 +7,17 @@ export const HeroV2 = () => {
   const palabras = ["Desarrollador Java", "Desarrollador Full Stack"];
   const { value } = useContext(counterContext);
   return (
-    <div style={{ minHeight: "60vh" }} className="text-white bg-transparent">
+    <div
+      style={{ minHeight: "60vh" }}
+      className="hero text-white bg-transparent"
+    >
       <img
         style={{
           zIndex: "-1",
           position: "fixed",
           top: "0",
           left: "0",
-          height: "90vh",
+          height: "100vh",
           objectFit: "cover",
           objectPosition: "center",
         }}
@@ -133,11 +136,13 @@ export const HeroV2 = () => {
             )}
           </div>
           <div
-            className="d-flex "
-            style={{
-              width: "100%",
-              justifyContent: "space-between",
-            }}
+            className="d-flex flex-row  w-100 justify-content-between align-items-center"
+            style={
+              {
+                // width: "100%",
+                // justifyContent: "space-between",
+              }
+            }
           >
             <div
               style={{
@@ -190,15 +195,28 @@ export const HeroV2 = () => {
                 ></i>
               </a>
             </div>
-            <div>
+            <div className="d-flex gap-2">
               <a
-                title="Resume"
+                title={value.isEnglish ? "Contact me" : "Contáctame"}
+                rel="noreferrer"
+                target="_blank"
+                href="https://es.fiverr.com/exer46"
+                className="btn  btn-outline-primary shadow px-3"
+                style={{
+                  fontWeight: "600",
+                }}
+              >
+                {value.isEnglish ? "Contact me" : "Contáctame"}
+              </a>
+
+              <a
+                title={value.isEnglish ? "Resume" : "Currículum"}
                 rel="noreferrer"
                 target="_blank"
                 href="https://drive.google.com/file/d/1vy22WDL6IB1k-7OqfYwjIKc7XZS3xvZ-/view?usp=sharing"
-                className="btn btn-info shadow px-3"
+                className="btn  btn-primary shadow px-3"
                 style={{
-                  fontWeight: "bold",
+                  fontWeight: "600",
                 }}
               >
                 {value.isEnglish ? "Resume" : "Currículum"}
@@ -207,7 +225,7 @@ export const HeroV2 = () => {
           </div>
         </div>
 
-        <div className="mx-auto d-none d-sm-block">
+        <div className="mx-auto d-none d-lg-block">
           <img
             src="./exe.webp"
             alt=""

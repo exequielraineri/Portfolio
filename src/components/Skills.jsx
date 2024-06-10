@@ -6,15 +6,66 @@ import java from "../assets/java_original.png";
 import css from "../assets/css.png";
 import figma from "../assets/figma.png";
 import bootstrap from "../assets/bootstrap.png";
-import github from "../assets/github.png";
 import javascript from "../assets/javascript.png";
 import mysql from "../assets/mysql.png";
 import react from "../assets/react.png";
-import spring from "../assets/spring.png";
 import html from "../assets/html.png";
 import docker from "../assets/docker-solo.png";
 import { counterContext } from "../context/contextCounter";
+import { SiGithub } from "react-icons/si";
 export const Skills = () => {
+  const skils = [
+    {
+      title: "Java",
+      icon: <img src={java} alt="Java" />,
+    },
+    {
+      title: "Spring",
+      icon: <img src="/public/spring.png" alt="Spring Boot" />,
+    },
+    {
+      title: "MySql",
+      icon: <img src={mysql} alt="MySql" />,
+    },
+    {
+      title: "HTML5",
+      icon: <img src={html} alt="HTML5" />,
+    },
+    {
+      title: "CSS",
+      icon: <img src={css} alt="CSS" />,
+    },
+    {
+      title: "Javascript",
+      icon: <img src={javascript} alt="Javascript" />,
+    },
+    {
+      title: "React Js",
+      icon: <img src={react} alt="React Js" />,
+    },
+    {
+      title: "Bootstrap",
+      icon: <img src={bootstrap} alt="Bootstrap" />,
+    },
+    {
+      title: "Docker",
+      icon: <img src={docker} alt="Docker" />,
+    },
+    {
+      title: "GitHub",
+      icon: (
+        <SiGithub
+          style={{
+            fontSize: "3em",
+          }}
+        />
+      ),
+    },
+    {
+      title: "Figma",
+      icon: <img src={figma} alt="Figma" />,
+    },
+  ];
   const {
     value: { isEnglish },
   } = useContext(counterContext);
@@ -41,7 +92,20 @@ export const Skills = () => {
         )}
       </div>
       <section className="container section-skills shadow">
-        <article
+        {skils.map((skill, index) => {
+          return (
+            <article
+              key={index}
+              data-aos="fade-up"
+              data-aos-duration={(index + 1) * 100}
+              className="skill-item"
+            >
+              {skill.icon}
+              <p>{skill.title}</p>
+            </article>
+          );
+        })}
+        {/* <article
           data-aos="fade-up"
           data-aos-duration="300"
           className="skill-item"
@@ -134,7 +198,7 @@ export const Skills = () => {
             }}
           />
           <p>Docker</p>
-        </article>
+        </article> */}
       </section>
     </div>
   );

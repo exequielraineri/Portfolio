@@ -14,8 +14,12 @@
   gap: 20px;
   padding: 20px;
   border-radius: 5px;
-  background-color: rgba(38, 64, 102, 0.3);
-  backdrop-filter: blur(5px);
+  /* background-color: rgba(38, 64, 102, 0.3); */
+  /* background:linear-gradient(120deg,  rgba(38, 64, 102, 0.1) 30%, rgba(38, 64, 102, 0.5)); */
+  background: linear-gradient(130deg, rgba(38, 64, 102, 1),rgba(38, 64, 102, 0)30% );
+  box-shadow: 0 0 10px rgba(38, 64, 102, .8) !important;
+
+
 }
 
 .section-skills .skill-item img {
@@ -41,7 +45,9 @@
 }
 
 
-.section-skills .skill-item img:hover {
+.section-skills .skill-item img:hover,
+.section-skills .skill-item i:hover,
+.section-skills .skill-item svg:hover {
   transform: scale(1.1);
 }
 

@@ -51,7 +51,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 .bloque-menu .about.isSpain:hover::after {
@@ -59,7 +59,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 
@@ -68,7 +68,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 .bloque-menu .experience.isSpain:hover::after {
@@ -76,7 +76,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 .bloque-menu .projects:hover::after {
@@ -84,7 +84,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 .bloque-menu .projects.isSpain:hover::after {
@@ -92,7 +92,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 .bloque-menu .skills:hover::after {
@@ -100,7 +100,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 .bloque-menu .skills.isSpain:hover::after {
@@ -108,7 +108,7 @@
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
-  color: white;
+  color: black;
 }
 
 
