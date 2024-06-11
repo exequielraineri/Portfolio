@@ -11,6 +11,7 @@ import { Link } from "react-scroll";
 import { HeroV2 } from "./components/HeroV2/HeroV2";
 import { Analytics } from "@vercel/analytics/react";
 import { FaArrowUp } from "react-icons/fa";
+import { Contacto } from "./components/Contacto/Contacto";
 
 function App() {
   window.addEventListener("scroll", function () {
@@ -65,6 +66,7 @@ function App() {
         <Experience></Experience>
         <Projects></Projects>
         <Skills></Skills>
+        <Contacto></Contacto>
         <Footer></Footer>
         <Link
           id="btnFloating"
