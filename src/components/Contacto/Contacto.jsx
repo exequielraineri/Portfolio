@@ -85,6 +85,7 @@ export const Contacto = () => {
                 </FormControl>
                 <FormControl className="col-12 col-sm-7">
                   <TextField
+                    className="rounded-2"
                     sx={{
                       backgroundColor: "rgba(38, 64, 102, .1)",
                       border: "solid rgba(38,64,102,1) 1px",
@@ -109,6 +110,7 @@ export const Contacto = () => {
               </FormGroup>
               <FormControl>
                 <TextField
+                  className="rounded-2"
                   sx={{
                     backgroundColor: "rgba(38, 64, 102, .1)",
                     border: "solid rgba(38,64,102,1) 1px",
