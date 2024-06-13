@@ -50,7 +50,7 @@ export const HeroV2 = () => {
               {" "}
               Exequiel Raineri
             </h1>
-            <h3
+            <h2
               style={{
                 fontSize: "1.3em",
               }}
@@ -72,7 +72,7 @@ export const HeroV2 = () => {
                   delaySpeed={1000}
                 />
               </span>
-            </h3>
+            </h2>
 
             {value.isEnglish ? (
               <>
@@ -229,7 +229,7 @@ export const HeroV2 = () => {
         <div className="mx-auto d-none d-lg-block">
           <img
             src="./exe.webp"
-            alt=""
+            alt="Exequiel Raineri Imagen"
             width={"200px"}
             height={"200px"}
             style={{

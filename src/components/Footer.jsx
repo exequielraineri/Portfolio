@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import "./css/footer.css";
 import { counterContext } from "../context/contextCounter";
+import { Link } from "react-scroll";
 export const Footer = () => {
   const {
     value: { isEnglish, setIsEnglish },
@@ -48,16 +49,18 @@ export const Footer = () => {
         >
           <i className="fa-regular fa-envelope"></i>
         </a>
-        <a
+        <Link
+          to={"hero"}
+          href="#hero"
           style={{
             cursor: "pointer",
           }}
           title={isEnglish ? "Language" : "Idioma"}
-          className="link-secondary  text-decoration-none "
+          className="link-info  text-decoration-none "
           onClick={() => setIsEnglish(!isEnglish)}
         >
           {isEnglish ? "| ES" : "| EN"}
-        </a>
+        </Link>
       </div>
     </footer>
   );

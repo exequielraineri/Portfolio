@@ -30,7 +30,7 @@ export const Projects = () => {
     value: { isEnglish },
   } = useContext(counterContext);
 
-  const [productos, setProductos] = useState([
+  const [proyectos, setProyectos] = useState([
     {
       title: "Landing Page - Food Delivery",
       imagen: imgZero_so,
@@ -81,7 +81,7 @@ export const Projects = () => {
       ],
       web: {
         btnText: "Privado",
-        // url: "#",
+        url: "#",
       },
     },
     {
@@ -190,7 +190,7 @@ export const Projects = () => {
       },
     },
   ]);
-  const [projects, setProjects] = useState([
+  const [proyects_all, setProjectsAll] = useState([
     {
       title: "Landing Page - Food Delivery",
       imagen: imgZero_so,
@@ -366,23 +366,23 @@ export const Projects = () => {
         >
           {isEnglish ? (
             <>
-              <h1 className="fondo-titulo">Projects</h1>
-              <h2 className="titulo">Projects</h2>
+              <h3 className="fondo-titulo">Projects</h3>
+              <h4 className="titulo">Projects</h4>
             </>
           ) : (
             <>
-              <h1 className="fondo-titulo">Proyectos</h1>
-              <h2 className="titulo">Proyectos</h2>
+              <h3 className="fondo-titulo">Proyectos</h3>
+              <h4 className="titulo">Proyectos</h4>
             </>
           )}
         </div>
         <section className="bloque-projects gap-4">
           {isEnglish == true
-            ? projects.map((project, index) => {
-                return <Proj key={index} project={project}></Proj>;
+            ? proyects_all.map((project, index) => {
+                return <Proj key={index + project} project={project}></Proj>;
               })
-            : productos.map((prod, index) => {
-                return <Proj key={index} project={prod}></Proj>;
+            : proyectos.map((proy, index) => {
+                return <Proj key={index + proy.title} project={proy}></Proj>;
               })}
         </section>
         {/* <Carrusel products={productos}></Carrusel> */}
@@ -406,13 +406,6 @@ export const Projects = () => {
 };
 
 const Proj = ({ project }) => {
-  // useEffect(() => {
-  //   Aos.init();
-  //   VanillaTilt.init(document.querySelectorAll(".card-tilt"), {
-  //     speed: 200,
-  //     max: 5,
-  //   });
-  // }, []);
   return (
     <div
       data-aos="fade-right"
@@ -436,7 +429,7 @@ const Proj = ({ project }) => {
               zIndex: 3,
             }}
           />
-          <h3
+          <h4
             data-aos="fade-right"
             data-aos-duration="200"
             style={
@@ -454,7 +447,7 @@ const Proj = ({ project }) => {
             >
               {project?.title}
             </b>
-          </h3>
+          </h4>
           <p data-aos="fade-right" data-aos-duration="200">
             <p className="fw-light">{project?.description}</p>
             <ul className="fw-light">
@@ -483,10 +476,12 @@ const Proj = ({ project }) => {
             className="w-100 justify-content-end"
           >
             <a
-              target="_blank"
+              target={"_blank"}
               rel="noreferrer"
-              href={project?.web?.url}
-              className="btn btn-sm btn-primary shadow px-3 rounded-1 "
+              href={project?.web?.url != "#" ? project.web.url : ""}
+              className={"btn btn-sm btn-primary shadow px-3 rounded-1 ".concat(
+                project.web.url == "#" ? " disabled" : ""
+              )}
               style={{
                 borderRadius: "10px",
               }}

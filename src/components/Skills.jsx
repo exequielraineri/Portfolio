@@ -17,44 +17,58 @@ export const Skills = () => {
   const skils = [
     {
       title: "Java",
-      icon: <img src={java} alt="Java" />,
+      icon: <img src={java} alt="Java" width={"100%"} height={"100%"} />,
     },
     {
       title: "Spring",
-      icon: <img src="./spring.png" alt="Spring Boot" />,
+      icon: (
+        <img
+          src="./spring.png"
+          alt="Spring Boot"
+          width={"100%"}
+          height={"100%"}
+        />
+      ),
     },
     {
       title: "MySql",
-      icon: <img src={mysql} alt="MySql" />,
+      icon: <img src={mysql} alt="MySql" width={"100%"} height={"100%"} />,
     },
     {
       title: "HTML5",
-      icon: <img src={html} alt="HTML5" />,
+      icon: <img src={html} alt="HTML5" width={"100%"} height={"100%"} />,
     },
     {
       title: "CSS",
-      icon: <img src={css} alt="CSS" />,
+      icon: <img src={css} alt="CSS" width={"100%"} height={"100%"} />,
     },
     {
       title: "Javascript",
-      icon: <img src={javascript} alt="Javascript" />,
+      icon: (
+        <img src={javascript} alt="Javascript" width={"100%"} height={"100%"} />
+      ),
     },
     {
       title: "React Js",
-      icon: <img src={react} alt="React Js" />,
+      icon: <img src={react} alt="React Js" width={"100%"} height={"100%"} />,
     },
     {
       title: "Bootstrap",
-      icon: <img src={bootstrap} alt="Bootstrap" />,
+      icon: (
+        <img src={bootstrap} alt="Bootstrap" width={"100%"} height={"100%"} />
+      ),
     },
     {
       title: "Docker",
-      icon: <img src={docker} alt="Docker" />,
+      icon: <img src={docker} alt="Docker" width={"100%"} height={"100%"} />,
     },
     {
       title: "GitHub",
       icon: (
         <SiGithub
+          className="h-100"
+          width={"100%"}
+          height={"100%"}
           style={{
             fontSize: "3em",
           }}
@@ -63,7 +77,7 @@ export const Skills = () => {
     },
     {
       title: "Figma",
-      icon: <img src={figma} alt="Figma" />,
+      icon: <img src={figma} alt="Figma" width={"100%"} height={"100%"} />,
     },
   ];
   const {
@@ -81,13 +95,13 @@ export const Skills = () => {
       >
         {isEnglish ? (
           <>
-            <h1 className="fondo-titulo">Skills</h1>
-            <h2 className="titulo">Skills</h2>
+            <h3 className="fondo-titulo">Skills</h3>
+            <h4 className="titulo">Skills</h4>
           </>
         ) : (
           <>
-            <h1 className="fondo-titulo">Habilidades</h1>
-            <h2 className="titulo">Habilidades</h2>
+            <h3 className="fondo-titulo">Habilidades</h3>
+            <h4 className="titulo">Habilidades</h4>
           </>
         )}
       </div>

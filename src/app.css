@@ -50,6 +50,9 @@
   position: relative;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  /* letter-spacing: 2px; */
 }
 
 .bloque-titulos .fondo-titulo {
@@ -57,9 +60,10 @@
   font-size: 4em;
   text-wrap: nowrap;
   color: #83a5ff;
-  opacity: 20%;
+  opacity: .1;
   filter: blur(3px);
-  font-weight: 900;
+  -webkit-filter: blur(3px);
+  font-weight: bold;
 }
 
 .bloque-titulos .titulo {
@@ -69,17 +73,17 @@
   width: 100%;
   font-size: 2em;
   color: #fff;
-  font-weight: 900;
+  font-weight: bold !important;
 }
 
 .bloque-titulos .titulo::after {
   content: "";
   width: 20%;
-  height: 5px;
+  height: 2px;
   border-radius: 1000px;
   display: block;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: rgba(38, 64, 102, 1);
 }
 
 

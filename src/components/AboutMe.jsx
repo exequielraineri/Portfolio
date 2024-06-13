@@ -25,13 +25,13 @@ export const AboutMe = () => {
       >
         {isEnglish ? (
           <>
-            <h1 className="fondo-titulo">About Me</h1>
-            <h2 className="titulo">About Me</h2>
+            <h3 className="fondo-titulo">About Me</h3>
+            <h4 className="titulo">About Me</h4>
           </>
         ) : (
           <>
-            <h1 className="fondo-titulo">Sobre Mi</h1>
-            <h2 className="titulo">Sobre Mi</h2>
+            <h3 className="fondo-titulo">Sobre Mi</h3>
+            <h4 className="titulo">Sobre Mi</h4>
           </>
         )}
       </div>

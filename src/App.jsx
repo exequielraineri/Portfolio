@@ -73,6 +73,7 @@ function App() {
           className="btn btn-light shadow btnFloating"
           style={{}}
           to="hero"
+          href="#hero"
           spy={true}
           smooth={true}
           offset={-100}

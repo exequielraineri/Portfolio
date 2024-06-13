@@ -41,7 +41,7 @@ export const Hero = () => {
           alt="Exequiel Raineri"
           loading="eager"
         />
-        <h2
+        <h1
           style={{
             fontWeight: "100",
             margin: 0,
@@ -57,8 +57,8 @@ export const Hero = () => {
           >
             Exequiel Raineri
           </span>{" "}
-        </h2>
-        <h3
+        </h1>
+        <h2
           style={{
             color: "#83a5ff",
             fontWeight: 500,
@@ -67,7 +67,7 @@ export const Hero = () => {
           }}
         >
           Full Stack Java Developer
-        </h3>
+        </h2>
         <p
           style={{
             marginTop: 15,

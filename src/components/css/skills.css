@@ -1,6 +1,6 @@
 .bloque-skills {
   position: relative;
-  margin: 60px auto;
+  margin: 20px auto;
   padding-top: 100px;
 }
 
@@ -9,7 +9,7 @@
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 20px;
   padding: 20px;
@@ -38,11 +38,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   color: white;
 
 
 }
+
+
 
 
 .section-skills .skill-item img:hover,

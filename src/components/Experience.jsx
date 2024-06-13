@@ -19,13 +19,13 @@ export const Experience = () => {
       >
         {isEnglish ? (
           <>
-            <h1 className="fondo-titulo">Experience</h1>
-            <h2 className="titulo">Experience</h2>
+            <h3 className="fondo-titulo">Experience</h3>
+            <h4 className="titulo">Experience</h4>
           </>
         ) : (
           <>
-            <h1 className="fondo-titulo">Experiencia</h1>
-            <h2 className="titulo">Experiencia</h2>
+            <h3 className="fondo-titulo">Experiencia</h3>
+            <h4 className="titulo">Experiencia</h4>
           </>
         )}
       </div>

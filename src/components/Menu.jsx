@@ -25,6 +25,7 @@ export const Menu = () => {
                   " underline about"
                 )}
                 to="about"
+                href="#about"
                 spy={true}
                 smooth={true}
                 offset={0}
@@ -40,6 +41,7 @@ export const Menu = () => {
                 )}
                 to="experience"
                 spy={true}
+                href="experience"
                 smooth={true}
                 duration={500}
               >
@@ -52,6 +54,7 @@ export const Menu = () => {
                   " underline projects"
                 )}
                 to="projects"
+                href="projects"
                 spy={true}
                 smooth={true}
                 duration={500}
@@ -65,6 +68,7 @@ export const Menu = () => {
                   " underline skills"
                 )}
                 to="skills"
+                href="skills"
                 spy={true}
                 smooth={true}
                 duration={500}
