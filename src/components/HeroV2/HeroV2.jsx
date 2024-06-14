@@ -8,10 +8,25 @@ export const HeroV2 = () => {
   const { value } = useContext(counterContext);
   return (
     <div
-      style={{ minHeight: "60vh" }}
+      style={{
+        minHeight: "60vh",
+        width: "100%",
+      }}
       className="hero text-white bg-transparent"
     >
-      <img
+      <div
+        style={{
+          position: "fixed",
+          background: "url(./programmer.jpg)",
+          width: "100vw",
+          height: "100vh",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          zIndex: "-1",
+        }}
+      ></div>
+      {/* <img
         style={{
           zIndex: "-1",
           position: "fixed",
@@ -20,19 +35,20 @@ export const HeroV2 = () => {
           height: "100vh",
           objectFit: "cover",
           objectPosition: "center",
+          width: "100%",
         }}
-        width={"100%"}
+        width="100"
         src="./programmer.jpg"
         alt="Fondo Body"
-        loading="eager"
-      />
+        loading="lazy"
+      /> */}
       <div
         style={{
           pointerEvents: "none",
           position: "absolute",
           width: "100%",
           backgroundColor: "rgba(0,0,0,.8)",
-          height: "100%",
+          height: "100vh",
           zIndex: "-1",
         }}
       ></div>
@@ -45,9 +61,15 @@ export const HeroV2 = () => {
               style={{
                 fontSize: "3em",
                 fontWeight: "bold",
+                // backgroundColor: "white",
+                // mixBlendMode: "screen",
+                color: "transparent",
+                background: "linear-gradient(158deg, rgb(98, 114, 255), white)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+                backgroundSize: "cover",
               }}
             >
-              {" "}
               Exequiel Raineri
             </h1>
             <h2
@@ -228,6 +250,7 @@ export const HeroV2 = () => {
 
         <div className="mx-auto d-none d-lg-block">
           <img
+            className="imagen-hero"
             src="./exe.webp"
             alt="Exequiel Raineri Imagen"
             width={"200px"}

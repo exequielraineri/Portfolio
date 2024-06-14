@@ -38,7 +38,7 @@ export const AboutMe = () => {
 
       <div className="bloque-parrafo shadow py-3">
         <img
-          loading="eager"
+          loading="lazy"
           className="shadow imagen-about"
           src={imgExeAbout}
           alt="Exequiel"

@@ -19,82 +19,94 @@
 }
 
 .bloque-menu .items a {
-  font-size: .9rem;
+  font-size: .8rem;
   text-decoration: none;
   color: #fff;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: uppercase;
-  border-left: solid 2px #83a5ff;
-  padding: 0 5px;
+  margin: 5px;
   position: relative;
+  transition: all .2s ease-in-out;
 }
 
 .bloque-menu .items a:hover {
   cursor: pointer;
+  color: #83a4ff;
 }
 
 
 .bloque-menu .underline::after {
   content: '';
-  text-align: start;
+  /* text-align: start; */
   background-color: #83a4ff;
-  width: 0px;
-  text-wrap: nowrap;
-  position: absolute;
-  top: 0;
-  left: 0;
+  width: 0%;
+  /* text-wrap: nowrap; */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  display: block;
+  height: 1px;
   transition: all 300ms;
 }
 
-.bloque-menu .about:hover::after {
+
+.bloque-menu .underline:hover::after{
+  width: 100%;
+  content: "";
+  color: #83a4ff;
+  margin-left: auto;
+}
+
+
+/* .bloque-menu .about:hover::after {
   content: "About Me";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
+} */
 
-.bloque-menu .about.isSpain:hover::after {
+/* .bloque-menu .about.isSpain:hover::after {
   content: "Sobre Mi";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
+} */
 
 
-.bloque-menu .experience:hover::after {
+/* .bloque-menu .experience:hover::after {
   content: "Experience";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
+} */
 
-.bloque-menu .experience.isSpain:hover::after {
+/* .bloque-menu .experience.isSpain:hover::after {
   content: "Experiencia";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
+} */
 
-.bloque-menu .projects:hover::after {
+/* .bloque-menu .projects:hover::after {
   content: "Projects";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
+} */
 
-.bloque-menu .projects.isSpain:hover::after {
+/* .bloque-menu .projects.isSpain:hover::after {
   content: "Proyectos";
   width: 100%;
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
-
+} */
+/* 
 .bloque-menu .skills:hover::after {
   content: "Skills";
   width: 100%;
@@ -109,7 +121,7 @@
   max-width: 200px;
   transition-delay: 0s;
   color: black;
-}
+} */
 
 
 .bloque-menu .logo-exe::after {
