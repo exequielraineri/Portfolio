@@ -10,8 +10,11 @@ import { Footer } from "./components/Footer";
 import { Link } from "react-scroll";
 import { HeroV2 } from "./components/HeroV2/HeroV2";
 import { Analytics } from "@vercel/analytics/react";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUp, FaPlus } from "react-icons/fa";
 import { Contacto } from "./components/Contacto/Contacto";
+import CountUp from "react-countup";
+import { useContext } from "react";
+import { counterContext } from "./context/contextCounter";
 
 function App() {
   window.addEventListener("scroll", function () {
@@ -24,6 +27,8 @@ function App() {
       botonFloating.classList.remove("aparecer");
     }
   });
+
+  const { value } = useContext(counterContext);
 
   return (
     <div
@@ -55,13 +60,74 @@ function App() {
 
       <Menu></Menu>
       {/* <Analytics /> */}
-      <HeroV2></HeroV2>
       <main
         style={{
           // backgroundColor: "#000011",
-          background: "linear-gradient(to bottom,  transparent,#000011 4%)",
+          background: "linear-gradient(to bottom,  transparent,#000011 70vh)",
         }}
       >
+        <HeroV2></HeroV2>
+        <div
+          className="d-grid gap-3 container my-3"
+          style={{
+            width: "100%",
+            placeContent: "center",
+            gridTemplateColumns: "repeat(auto-fit, minmax(10px, 40%))",
+          }}
+        >
+          <div
+            style={{
+              maxWidth: "200px",
+              border: "#264066 1px solid",
+              boxShadow: "0 0 5px rgba(255,255,255,.1)",
+            }}
+            className="w-100 mx-auto rounded-1 p-2 d-flex flex-column"
+          >
+            <div className="text-primary fw-bold d-flex align-items-center gap-1 justify-content-start">
+              <FaPlus />
+              <CountUp
+                end={2}
+                style={{
+                  fontSize: "1.8em",
+                }}
+              />
+            </div>
+            <span
+              style={{
+                color: "#264066",
+                fontWeight: "bold",
+              }}
+            >
+              {value.isEnglish ? "Experience" : "Experiencia"}
+            </span>
+          </div>
+          <div
+            style={{
+              maxWidth: "200px",
+              border: "#264066 1px solid",
+              boxShadow: "0 0 5px rgba(255,255,255,.1)",
+            }}
+            className="mx-auto w-100 rounded-1 p-2 d-flex flex-column"
+          >
+            <div className="text-primary fw-bold d-flex align-items-center w-100 gap-1 justify-content-start">
+              <FaPlus />
+              <CountUp
+                end={10}
+                style={{
+                  fontSize: "1.8em",
+                }}
+              />
+            </div>
+            <span
+              style={{
+                color: "#264066",
+                fontWeight: "bold",
+              }}
+            >
+              {value.isEnglish ? "Projects" : "Proyectos"}
+            </span>
+          </div>
+        </div>
         <AboutMe></AboutMe>
         <Experience></Experience>
         <Projects></Projects>

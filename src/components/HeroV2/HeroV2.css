@@ -36,3 +36,19 @@
     box-shadow: 0 0 10px lightblue
 
   }
+
+
+
+  .efecto-fade{
+    animation: fade linear both;
+    animation-timeline: scroll(root block);
+  }
+
+  @keyframes fade{
+    0%{
+      transform: translateY(0);
+    }
+    100%{
+      transform:  translateY(-90%);
+    }
+  }

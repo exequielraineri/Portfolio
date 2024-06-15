@@ -12,18 +12,22 @@ export const HeroV2 = () => {
         minHeight: "60vh",
         width: "100%",
       }}
-      className="hero text-white bg-transparent"
+      className="hero text-white"
     >
       <div
+        className="efecto-fade"
         style={{
           position: "fixed",
-          background: "url(./programmer.jpg)",
-          width: "100vw",
+          background: "url(/programmer.webp)",
+          width: "100%",
           height: "100vh",
+          top: "0",
+          left: "0",
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           zIndex: "-1",
+          opacity: 0.4,
         }}
       ></div>
       {/* <img
@@ -42,16 +46,6 @@ export const HeroV2 = () => {
         alt="Fondo Body"
         loading="lazy"
       /> */}
-      <div
-        style={{
-          pointerEvents: "none",
-          position: "absolute",
-          width: "100%",
-          backgroundColor: "rgba(0,0,0,.8)",
-          height: "100vh",
-          zIndex: "-1",
-        }}
-      ></div>
       <div className="d-flex  container flex-wrap align-items-end py-3 pt-5 gap-3">
         <div className="d-flex flex-column gap-3">
           <div className=" border-bottom   ">
