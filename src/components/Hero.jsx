@@ -16,9 +16,7 @@ export const Hero = () => {
     max: 5,
     transition: true,
   });
-  useEffect(() => {
-    Aos.init();
-  }, []);
+
   return (
     <div
       data-aos="fade-right"

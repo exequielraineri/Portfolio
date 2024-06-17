@@ -8,19 +8,17 @@ export const AboutMe = () => {
   const {
     value: { isEnglish },
   } = useContext(counterContext);
-  useEffect(() => {
-    Aos.init();
-  }, []);
+
   return (
     <div
-      data-aos="fade-left"
-      data-aos-duration="2000"
+      data-aos="fade-zoom-in"
+      data-aos-duration="1000"
       id="about"
       className="container bloque-aboutMe pt-5"
     >
       <div
-        data-aos="fade-left"
-        data-aos-duration="2500"
+        data-aos="fade-zoom-in"
+        data-aos-duration="1500"
         className="bloque-titulos"
       >
         {isEnglish ? (

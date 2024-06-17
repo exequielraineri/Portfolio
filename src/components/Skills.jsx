@@ -83,13 +83,11 @@ export const Skills = () => {
   const {
     value: { isEnglish },
   } = useContext(counterContext);
-  useEffect(() => {
-    Aos.init();
-  }, []);
+
   return (
     <div id="skills" className="bloque-skills">
       <div
-        data-aos="fade-right"
+        data-aos="fade-zoom-in"
         data-aos-duration="1000"
         className="bloque-titulos"
       >

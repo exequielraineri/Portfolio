@@ -7,13 +7,11 @@ export const Experience = () => {
   const {
     value: { isEnglish },
   } = useContext(counterContext);
-  useEffect(() => {
-    Aos.init();
-  }, []);
+
   return (
     <div id="experience" className="bloque-experience">
       <div
-        data-aos="fade-right"
+        data-aos="fade-zoom-in"
         data-aos-duration="2000"
         className="bloque-titulos"
       >
@@ -30,7 +28,7 @@ export const Experience = () => {
         )}
       </div>
       <div
-        data-aos="fade-right"
+        data-aos="fade-zoom-in"
         data-aos-duration="2000"
         className="bloque-texto shadow"
       >

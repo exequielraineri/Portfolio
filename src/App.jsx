@@ -15,6 +15,7 @@ import { Contacto } from "./components/Contacto/Contacto";
 import CountUp from "react-countup";
 import { useContext } from "react";
 import { counterContext } from "./context/contextCounter";
+import Aos from "aos";
 
 function App() {
   window.addEventListener("scroll", function () {
@@ -29,43 +30,17 @@ function App() {
   });
 
   const { value } = useContext(counterContext);
-
+  Aos.init();
   return (
-    <div
-      style={
-        {
-          // position: "relative",
-          // backgroundColor: "#000011",
-        }
-      }
-    >
-      {/* <video
-          src={video2}
-          loop={true}
-          autoPlay={true}
-          muted={true}
-          width={"100%"}
-          height={"100%"}
-          style={{
-            maxWidth: "700px",
-            opacity: 0.05,
-            position: "fixed",
-            top: 0,
-            right: 0,
-            objectFit: "cover",
-            objectPosition: "center",
-          }}
-        ></video> */}
-      {/* <Hero></Hero> */}
-
-      <Menu></Menu>
-      {/* <Analytics /> */}
-      <main
+    <>
+      <div
         style={{
           // backgroundColor: "#000011",
+          minHeight: "100vh",
           background: "linear-gradient(to bottom,  transparent,#000011 70vh)",
         }}
       >
+        <Menu></Menu>
         <HeroV2></HeroV2>
         <div
           className="d-grid gap-3 container my-3"
@@ -147,8 +122,8 @@ function App() {
         >
           <FaArrowUp />
         </Link>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
 

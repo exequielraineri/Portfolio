@@ -10,7 +10,7 @@ import imgInventoryPauny from "../assets/inventory_so.png";
 import imgToDoList from "../assets/tasks_so.png";
 import imgZero_so from "../assets/zero_so.png";
 import imgFlota from "../assets/track_so.png";
-import VanillaTilt from "vanilla-tilt";
+import { Fade } from "react-awesome-reveal";
 import {
   SiBootstrap,
   SiCss3,
@@ -347,9 +347,6 @@ export const Projects = () => {
     },
   ]);
 
-  useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <div
       style={{
@@ -360,8 +357,8 @@ export const Projects = () => {
     >
       <div id="projects" className="container ">
         <div
-          data-aos="fade-right"
-          data-aos-duration="1500"
+          // data-aos="fade-zoom-in"
+          // data-aos-duration="1500"
           className="bloque-titulos"
         >
           {isEnglish ? (
@@ -377,19 +374,21 @@ export const Projects = () => {
           )}
         </div>
         <section className="bloque-projects gap-4">
-          {isEnglish == true
-            ? proyects_all.map((project, index) => {
-                return <Proj key={index + project} project={project}></Proj>;
-              })
-            : proyectos.map((proy, index) => {
-                return <Proj key={index + proy.title} project={proy}></Proj>;
-              })}
+          <Fade cascade damping={0.2}>
+            {isEnglish == true
+              ? proyects_all.map((project, index) => {
+                  return <Proj key={index + project} project={project}></Proj>;
+                })
+              : proyectos.map((proy, index) => {
+                  return <Proj key={index + proy.title} project={proy}></Proj>;
+                })}
+          </Fade>
         </section>
         {/* <Carrusel products={productos}></Carrusel> */}
       </div>
       {/* <button
-        data-aos="fade-right"
-        data-aos-duration="200"
+        // data-aos="fade-zoom-in"
+        // data-aos-duration="1500"
         onClick={() => {
           if (cantidadMostrar == 2) {
             setCantidadMostrar(projects.length);
@@ -405,21 +404,20 @@ export const Projects = () => {
   );
 };
 
-const Proj = ({ project }) => {
+const Proj = ({ project, index }) => {
   return (
     <div
-      data-aos="fade-right"
-      data-aos-duration="200"
-      className="bloque-items p-0 m-0 "
+      // data-aos="fade-zoom-in"
+      // data-aos-duration={(index + 1) * 2000}
+      // data-aos-delay={(index + 1) * 1000}
+      className="bloque-items p-0 m-0 h-100"
     >
       <div className="item">
         <div className="contenido py-3">
           <img
             loading="eager"
-            data-tilt
-            data-tilt-scale="1.2"
-            data-aos="fade-right"
-            data-aos-duration="200"
+            // data-aos="fade-zoom-in"
+            // data-aos-duration="1500"
             width={"100%"}
             height={"100%"}
             src={project?.imagen}
@@ -430,8 +428,8 @@ const Proj = ({ project }) => {
             }}
           />
           <h4
-            data-aos="fade-right"
-            data-aos-duration="200"
+            // data-aos="fade-zoom-in"
+            // data-aos-duration="1500"
             style={
               {
                 // textAlign: "center",
@@ -448,7 +446,10 @@ const Proj = ({ project }) => {
               {project?.title}
             </b>
           </h4>
-          <p data-aos="fade-right" data-aos-duration="200">
+          <p
+          //  data-aos="fade-zoom-in"
+          //  data-aos-duration="1500"
+          >
             <p className="fw-light">{project?.description}</p>
             <ul className="fw-light">
               {project?.points?.map((point, index) => {
@@ -459,8 +460,8 @@ const Proj = ({ project }) => {
         </div>
         <div className="item-caracteristicas d-flex flex-column gap-3 flex-wrap">
           <div
-            data-aos="fade-right"
-            data-aos-duration="200"
+            // data-aos="fade-zoom-in"
+            // data-aos-duration="1000"
             style={{
               borderBottom: "solid 1px rgba(255,255,255,.2)",
             }}
@@ -471,8 +472,8 @@ const Proj = ({ project }) => {
             })}
           </div>
           <div
-            data-aos="fade-left"
-            data-aos-duration="200"
+            // data-aos="fade-up"
+            // data-aos-duration="1500"
             className="w-100 justify-content-end"
           >
             <a

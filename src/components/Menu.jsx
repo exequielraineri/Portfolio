@@ -11,10 +11,21 @@ export const Menu = () => {
   } = useContext(counterContext);
 
   return (
-    <Navbar expand="lg" className=" bloque-menu bg-black">
+    <Navbar
+      expand="lg"
+      variant="dark"
+      className="bloque-menu bg-transparent"
+      style={{
+        backdropFilter: "blur(5px)",
+        WebkitBackdropFilter: "blur(5px)",
+      }}
+    >
       <Container>
-        <Navbar.Brand className="logo-exe text-light">Portfolio.</Navbar.Brand>
-        <Navbar.Toggle className="bg-light" aria-controls="basic-navbar-nav" />
+        <Navbar.Brand className="logo-exe text-white">Portfolio.</Navbar.Brand>
+        <Navbar.Toggle
+          className="bg-transparent border-0"
+          aria-controls="basic-navbar-nav"
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto items">
             <Nav>

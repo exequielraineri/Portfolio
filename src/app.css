@@ -11,10 +11,11 @@
     /* position: relative; */
     /* background: linear-gradient(180deg,rgba(98, 114, 255,.2), black); */
     background-color: #000;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-      }
+
+    }
 
 
 
@@ -56,6 +57,7 @@
 }
 
 .bloque-titulos .fondo-titulo {
+  overflow-x: hidden;
   width: 100%;
   font-size: 4em;
   text-wrap: nowrap;

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import "./HeroV2.css";
 import { counterContext } from "../../context/contextCounter";
+import { Button } from "@mui/material";
 export const HeroV2 = () => {
   const words = ["Java Developer", "Full Stack Developer"];
   const palabras = ["Desarrollador Java", "Desarrollador Full Stack"];
@@ -10,17 +11,17 @@ export const HeroV2 = () => {
     <div
       style={{
         minHeight: "60vh",
-        width: "100%",
+        // width: "100%",
       }}
       className="hero text-white"
     >
-      <div
+      {/* <div
         className="efecto-fade"
         style={{
           position: "fixed",
           background: "url(/programmer.webp)",
-          width: "100%",
-          height: "100%",
+          width: "100vw",
+          height: "100vw",
           minHeight: "100vh",
           top: "0",
           left: "0",
@@ -30,8 +31,8 @@ export const HeroV2 = () => {
           zIndex: "-1",
           opacity: 0.4,
         }}
-      ></div>
-      {/* <img
+      ></div> */}
+      <img
         style={{
           zIndex: "-1",
           position: "fixed",
@@ -41,12 +42,13 @@ export const HeroV2 = () => {
           objectFit: "cover",
           objectPosition: "center",
           width: "100%",
+          opacity: 0.5,
         }}
-        width="100"
-        src="./programmer.jpg"
+        width={100}
+        src="./programmer.webp"
         alt="Fondo Body"
         loading="lazy"
-      /> */}
+      />
       <div className="d-flex  container flex-wrap align-items-end py-3 pt-5 gap-3">
         <div className="d-flex flex-column gap-3">
           <div className=" border-bottom   ">
@@ -154,21 +156,21 @@ export const HeroV2 = () => {
             )}
           </div>
           <div
-            className="d-flex flex-row  w-100 justify-content-between align-items-center"
-            style={
-              {
-                // width: "100%",
-                // justifyContent: "space-between",
-              }
-            }
+            className="d-grid align-items-center"
+            style={{
+              gridTemplateColumns: "1fr 1fr",
+              placeContent: "center",
+            }}
           >
             <div
-              style={{
-                transform: "translateZ(20px)",
-              }}
-              data-aos="fade-right"
-              data-aos-duration="2500"
-              className="redes d-flex gap-2 align-items-center "
+              style={
+                {
+                  // transform: "translateZ(20px)",
+                }
+              }
+              // data-aos="fade-right"
+              // data-aos-duration="2500"
+              className="redes d-flex gap-1"
             >
               <a
                 href="https://www.instagram.com/exeraineri/"
@@ -213,32 +215,27 @@ export const HeroV2 = () => {
                 ></i>
               </a>
             </div>
-            <div className="d-flex gap-2">
-              <a
-                title={value.isEnglish ? "Contact me" : "Contáctame"}
-                rel="noreferrer"
-                target="_blank"
+            <div className="d-flex gap-1 align-items-center justify-content-end">
+              <Button
                 href="https://es.fiverr.com/exer46"
-                className="btn  btn-outline-primary shadow px-3"
-                style={{
-                  fontWeight: "600",
-                }}
+                target="_blank"
+                variant="outlined"
+                color="primary"
+                // className="px-2"
+                size="small"
               >
                 {value.isEnglish ? "Contact me" : "Contáctame"}
-              </a>
-
-              <a
-                title={value.isEnglish ? "Resume" : "Currículum"}
-                rel="noreferrer"
-                target="_blank"
+              </Button>
+              <Button
                 href="https://drive.google.com/file/d/1vy22WDL6IB1k-7OqfYwjIKc7XZS3xvZ-/view?usp=sharing"
-                className="btn  btn-primary shadow px-3"
-                style={{
-                  fontWeight: "600",
-                }}
+                target="_blank"
+                variant="contained"
+                color="primary"
+                // className="px-2"
+                size="small"
               >
                 {value.isEnglish ? "Resume" : "Currículum"}
-              </a>
+              </Button>
             </div>
           </div>
         </div>
