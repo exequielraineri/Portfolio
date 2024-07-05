@@ -1,7 +1,5 @@
 import "./css/skills.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import java from "../assets/java_original.png";
 import css from "../assets/css.png";
 import figma from "../assets/figma.png";

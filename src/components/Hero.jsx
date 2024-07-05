@@ -1,7 +1,5 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import "./css/hero.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 import imgExe from "../assets/exe.webp";
 import VanillaTilt from "vanilla-tilt";

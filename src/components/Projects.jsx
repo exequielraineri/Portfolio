@@ -1,9 +1,6 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import "./css/projects.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import imgVivero from "../assets/vivero_so.png";
 import imgPuntoVenta from "../assets/venta_so.png";
 import imgInventoryPauny from "../assets/inventory_so.png";
@@ -11,20 +8,17 @@ import imgToDoList from "../assets/tasks_so.png";
 import imgZero_so from "../assets/zero_so.png";
 import imgFlota from "../assets/track_so.png";
 import { Fade } from "react-awesome-reveal";
+import { v1 } from "uuid";
 import {
   SiBootstrap,
-  SiCss3,
   SiDocker,
-  SiHtml5,
   SiJavascript,
   SiMysql,
   SiReact,
   SiSpring,
-  SiWasmcloud,
 } from "react-icons/si";
 import { FaAws, FaJava } from "react-icons/fa";
 import { counterContext } from "../context/contextCounter";
-import { Carrusel } from "./Carrusel/Carrusel";
 export const Projects = () => {
   const {
     value: { isEnglish },
@@ -45,9 +39,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -71,13 +65,13 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <FaJava size={"2em"} />,
-        <SiSpring size={"2em"} />,
-        <SiMysql size={"2em"} />,
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiDocker size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <FaJava key={v1()} size={"2em"} />,
+        <SiSpring key={v1()} size={"2em"} />,
+        <SiMysql key={v1()} size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiDocker key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Privado",
@@ -101,9 +95,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -127,9 +121,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <FaJava size={"2em"} />,
-        <FaAws size={"2em"} />,
-        <SiSpring size={"2em"} />,
+        <FaJava key={v1()} size={"2em"} />,
+        <FaAws key={v1()} size={"2em"} />,
+        <SiSpring key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Repositorio",
@@ -153,10 +147,10 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiSpring size={"2em"} />,
-        <FaJava size={"2em"} />,
-        <FaAws size={"2em"} />,
-        <SiMysql size={"2em"} />,
+        <SiSpring key={v1()} size={"2em"} />,
+        <FaJava key={v1()} size={"2em"} />,
+        <FaAws key={v1()} size={"2em"} />,
+        <SiMysql key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Repositorio",
@@ -180,9 +174,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -205,9 +199,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -231,13 +225,13 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <FaJava size={"2em"} />,
-        <SiSpring size={"2em"} />,
-        <SiMysql size={"2em"} />,
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiDocker size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <FaJava key={v1()} size={"2em"} />,
+        <SiSpring key={v1()} size={"2em"} />,
+        <SiMysql key={v1()} size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiDocker key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Private",
@@ -261,9 +255,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -309,10 +303,10 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiSpring size={"2em"} />,
-        <FaJava size={"2em"} />,
-        <FaAws size={"2em"} />,
-        <SiMysql size={"2em"} />,
+        <SiSpring key={v1()} size={"2em"} />,
+        <FaJava key={v1()} size={"2em"} />,
+        <FaAws key={v1()} size={"2em"} />,
+        <SiMysql key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Repositorio",
@@ -336,9 +330,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact size={"2em"} />,
-        <SiJavascript size={"2em"} />,
-        <SiBootstrap size={"2em"} />,
+        <SiReact key={v1()} size={"2em"} />,
+        <SiJavascript key={v1()} size={"2em"} />,
+        <SiBootstrap key={v1()} size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -404,20 +398,13 @@ export const Projects = () => {
   );
 };
 
-const Proj = ({ project, index }) => {
+const Proj = ({ project }) => {
   return (
-    <div
-      // data-aos="fade-zoom-in"
-      // data-aos-duration={(index + 1) * 2000}
-      // data-aos-delay={(index + 1) * 1000}
-      className="bloque-items p-0 m-0 h-100"
-    >
+    <div className="bloque-items p-0 m-0 h-100">
       <div className="item">
         <div className="contenido py-3">
           <img
             loading="eager"
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1500"
             width={"100%"}
             height={"100%"}
             src={project?.imagen}
@@ -427,15 +414,7 @@ const Proj = ({ project, index }) => {
               zIndex: 3,
             }}
           />
-          <h4
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1500"
-            style={
-              {
-                // textAlign: "center",
-              }
-            }
-          >
+          <h4>
             <b
               style={{
                 color: "#83a5ff",
@@ -446,36 +425,26 @@ const Proj = ({ project, index }) => {
               {project?.title}
             </b>
           </h4>
-          <p
-          //  data-aos="fade-zoom-in"
-          //  data-aos-duration="1500"
-          >
-            <p className="fw-light">{project?.description}</p>
-            <ul className="fw-light">
-              {project?.points?.map((point, index) => {
-                return <li key={index}>{point.text}</li>;
-              })}
-            </ul>
-          </p>
+
+          <p className="fw-light">{project?.description}</p>
+          <ul className="fw-light">
+            {project?.points?.map((point) => {
+              return <li key={v1()}>{point.text}</li>;
+            })}
+          </ul>
         </div>
         <div className="item-caracteristicas d-flex flex-column gap-3 flex-wrap">
           <div
-            // data-aos="fade-zoom-in"
-            // data-aos-duration="1000"
             style={{
               borderBottom: "solid 1px rgba(255,255,255,.2)",
             }}
             className="w-100 pb-2"
           >
-            {project?.tools?.map((tool, index) => {
+            {project?.tools?.map((tool) => {
               return tool;
             })}
           </div>
-          <div
-            // data-aos="fade-up"
-            // data-aos-duration="1500"
-            className="w-100 justify-content-end"
-          >
+          <div className="w-100 justify-content-end">
             <a
               target={"_blank"}
               rel="noreferrer"

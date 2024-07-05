@@ -1,10 +1,9 @@
-import React, { useContext, useState } from "react";
-import { FormControl, FormGroup, Input, TextField } from "@mui/material";
+import { useContext, useState } from "react";
 import { counterContext } from "../../context/contextCounter";
-import { Button } from "@mui/material";
 import axios from "axios";
 import { useForm } from "react-hook-form";
 import Loading from "react-loading-components";
+import { Button, FormControl, FormGroup, TextField } from "@mui/material";
 export const Contacto = () => {
   const { value } = useContext(counterContext);
   const { handleSubmit, register, reset } = useForm();
@@ -25,6 +24,7 @@ export const Contacto = () => {
   };
   return (
     <div
+      id="contacto"
       className="rounded-2 mx-auto"
       style={{
         margin: "10em 0",

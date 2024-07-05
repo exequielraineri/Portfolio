@@ -1,7 +1,5 @@
 import "./css/aboutMe.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import imgExeAbout from "../assets/exeNieve.webp";
 import { counterContext } from "../context/contextCounter";
 import { sobreMi, sobreMiEN } from "../data/data";

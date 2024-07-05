@@ -61,6 +61,7 @@ function App() {
             <div className="text-primary fw-bold d-flex align-items-center gap-1 justify-content-start">
               <FaPlus />
               <CountUp
+                duration={2}
                 end={2}
                 style={{
                   fontSize: "1.8em",
@@ -87,6 +88,7 @@ function App() {
             <div className="text-primary fw-bold d-flex align-items-center w-100 gap-1 justify-content-start">
               <FaPlus />
               <CountUp
+                duration={2}
                 end={10}
                 style={{
                   fontSize: "1.8em",

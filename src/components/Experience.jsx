@@ -1,7 +1,5 @@
 import "./css/experience.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { counterContext } from "../context/contextCounter";
 export const Experience = () => {
   const {

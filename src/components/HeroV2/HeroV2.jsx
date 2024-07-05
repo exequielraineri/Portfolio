@@ -15,23 +15,6 @@ export const HeroV2 = () => {
       }}
       className="hero text-white"
     >
-      {/* <div
-        className="efecto-fade"
-        style={{
-          position: "fixed",
-          background: "url(/programmer.webp)",
-          width: "100vw",
-          height: "100vw",
-          minHeight: "100vh",
-          top: "0",
-          left: "0",
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundAttachment: "fixed",
-          zIndex: "-1",
-          opacity: 0.4,
-        }}
-      ></div> */}
       <img
         style={{
           zIndex: "-1",
@@ -125,7 +108,7 @@ export const HeroV2 = () => {
             ) : (
               <>
                 <p
-                  className="fw-light"
+                  // className="fw-light"
                   style={{
                     marginTop: 15,
                     maxWidth: "700px",
@@ -140,7 +123,7 @@ export const HeroV2 = () => {
                   al usuario.
                 </p>
                 <p
-                  className="fw-light"
+                  // className="fw-light"
                   style={{
                     marginTop: 15,
                     maxWidth: "700px",
@@ -217,8 +200,7 @@ export const HeroV2 = () => {
             </div>
             <div className="d-flex gap-1 align-items-center justify-content-end">
               <Button
-                href="https://es.fiverr.com/exer46"
-                target="_blank"
+                href="#contacto"
                 variant="outlined"
                 color="primary"
                 // className="px-2"

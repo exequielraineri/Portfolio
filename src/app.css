@@ -12,7 +12,7 @@
     /* background: linear-gradient(180deg,rgba(98, 114, 255,.2), black); */
     background-color: #000;
     overflow-x: hidden !important;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif, Arial, Helvetica;
     font-size: 14px;
 
     }

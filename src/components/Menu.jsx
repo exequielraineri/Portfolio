@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { counterContext } from "../context/contextCounter";
 export const Menu = () => {
   const {
-    value: { isEnglish, setIsEnglish },
+    value: { isEnglish },
   } = useContext(counterContext);
 
   return (
