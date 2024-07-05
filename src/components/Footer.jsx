@@ -10,13 +10,33 @@ export const Footer = () => {
     <footer className="bg-black">
       {isEnglish ? (
         <>
-          <p>Developed by Exequiel Raineri</p>
-          <p> 2024</p>
+          <p>
+            Developed by{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/exequielraineri/"
+              className="text-light"
+            >
+              Exequiel Raineri
+            </a>
+          </p>
+          <p>{new Date().getFullYear()}</p>
         </>
       ) : (
         <>
-          <p>Desarrollado por Exequiel Raineri</p>
-          <p>2024</p>
+          <p>
+            Desarrollado por{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/exequielraineri/"
+              className="text-light"
+            >
+              Exequiel Raineri
+            </a>
+          </p>
+          <p>{new Date().getFullYear()}</p>
         </>
       )}
 
