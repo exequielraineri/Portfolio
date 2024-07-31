@@ -28,6 +28,7 @@ export const HeroV2 = () => {
           opacity: 0.5,
         }}
         width={100}
+        className="imagen-fondo"
         src="./programmer.webp"
         alt="Fondo Body"
         loading="lazy"

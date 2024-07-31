@@ -9,7 +9,6 @@ import { Skills } from "./components/Skills";
 import { Footer } from "./components/Footer";
 import { Link } from "react-scroll";
 import { HeroV2 } from "./components/HeroV2/HeroV2";
-import { Analytics } from "@vercel/analytics/react";
 import { FaArrowUp, FaPlus } from "react-icons/fa";
 import { Contacto } from "./components/Contacto/Contacto";
 import CountUp from "react-countup";

@@ -52,3 +52,15 @@
       transform:  translateY(-90%);
     }
   }
+
+  @media (max-width: 450px) {
+    .imagen-fondo{
+      width: 100% !important;
+      height: 85vh !important;
+
+    }
+  }
+
+
+  
+  
