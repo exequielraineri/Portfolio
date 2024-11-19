@@ -65,7 +65,7 @@ export const Footer = () => {
         <a
           target="_blank"
           rel="noreferrer"
-          href="mailto:exeraineri15@gmail.com"
+          href="mailto:exeraineridev@gmail.com"
         >
           <i className="fa-regular fa-envelope"></i>
         </a>
