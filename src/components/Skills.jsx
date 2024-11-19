@@ -1,16 +1,18 @@
 import "./css/skills.css";
 import { useContext } from "react";
-import java from "../assets/java_original.png";
-import css from "../assets/css.png";
-import figma from "../assets/figma.png";
-import bootstrap from "../assets/bootstrap.png";
-import javascript from "../assets/javascript.png";
-import mysql from "../assets/mysql.png";
-import react from "../assets/react.png";
-import html from "../assets/html.png";
-import docker from "../assets/docker-solo.png";
 import { counterContext } from "../context/contextCounter";
 import { SiGithub } from "react-icons/si";
+import {
+  java,
+  bootstrap,
+  css,
+  docker,
+  figma,
+  html,
+  javascript,
+  mysql,
+  react,
+} from "../data/data";
 export const Skills = () => {
   const skils = [
     {

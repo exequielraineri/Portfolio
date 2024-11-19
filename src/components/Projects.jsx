@@ -1,14 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./css/projects.css";
 import { useContext, useState } from "react";
-import imgVivero from "../assets/vivero_so.png";
-import imgPuntoVenta from "../assets/venta_so.png";
-import imgInventoryPauny from "../assets/inventory_so.png";
-import imgToDoList from "../assets/tasks_so.png";
-import imgZero_so from "../assets/zero_so.png";
-import imgFlota from "../assets/track_so.png";
 import { Fade } from "react-awesome-reveal";
-import { v1 } from "uuid";
 import {
   SiBootstrap,
   SiDocker,
@@ -16,9 +9,20 @@ import {
   SiMysql,
   SiReact,
   SiSpring,
+  SiSpringboot,
 } from "react-icons/si";
-import { FaAws, FaJava } from "react-icons/fa";
+import { FaAws, FaDocker, FaJava } from "react-icons/fa";
 import { counterContext } from "../context/contextCounter";
+import {
+  imgZero_so,
+  imgFlota,
+  imgInventoryPauny,
+  imgPuntoVenta,
+  imgToDoList,
+  imgVivero,
+  imgLaBelgrano,
+  imgPedimeApp,
+} from "../data/data";
 export const Projects = () => {
   const {
     value: { isEnglish },
@@ -26,7 +30,56 @@ export const Projects = () => {
 
   const [proyectos, setProyectos] = useState([
     {
-      title: "Landing Page - Food Delivery",
+      title: "La Belgrano - Aplicación Web",
+      imagen: imgLaBelgrano,
+      description:
+        "Pequeña aplicación para una carnicería local, cuya función principal es recibir pedidos vía WhatsApp mediante una selección de productos y cantidades. Además, cuenta con un inicio de sesión para que el administrador pueda agregar, modificar o eliminar productos.",
+      points: [
+        {
+          text: "Frontend: React Js.",
+        },
+        {
+          text: "Backend: Java / Spring Boot.",
+        },
+      ],
+      tools: [
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaDocker size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <SiMysql size={"2em"} />,
+      ],
+      web: {
+        btnText: "Web",
+        url: "https://labelgrano.com.ar",
+      },
+    },
+    {
+      title: "Pedime App - Landing Page",
+      imagen: imgPedimeApp,
+      description: "Landing Page para mostrar una aplicación movil de Delivery",
+      points: [
+        {
+          text: "Frontend: React Js.",
+        },
+        {
+          text: "Secciones: Inicio | Acerca De | Caracteristicas | Funcionalidades | Galeria.",
+        },
+      ],
+      tools: [
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
+      ],
+      web: {
+        btnText: "Web",
+        url: "https://pedimeapp.exeraineri.com/",
+      },
+    },
+    {
+      title: "Food Delivery - Landing Page",
       imagen: imgZero_so,
       description:
         "El principal objetivo del proyecto es crear una landing page que atraiga tanto a la creciente comunidad venezolana en Uruguay como a los locales interesados en explorar nuevas experiencias culinarias. La página debe ser visualmente atractiva, fácil de navegar y funcional, proporcionando toda la información necesaria para que los visitantes puedan conocer el menú, hacer reservaciones, y aprender más sobre la cultura venezolana.",
@@ -39,13 +92,13 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Web",
-        url: "https://zona-058-frontend-twsh.vercel.app/",
+        url: "https://zona058.exeraineri.com/",
       },
     },
     {
@@ -65,13 +118,13 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <FaJava key={v1()} size={"2em"} />,
-        <SiSpring key={v1()} size={"2em"} />,
-        <SiMysql key={v1()} size={"2em"} />,
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiDocker key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <SiMysql size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiDocker size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Privado",
@@ -95,9 +148,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -121,9 +174,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <FaJava key={v1()} size={"2em"} />,
-        <FaAws key={v1()} size={"2em"} />,
-        <SiSpring key={v1()} size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaAws size={"2em"} />,
+        <SiSpring size={"2em"} />,
       ],
       web: {
         btnText: "Repositorio",
@@ -147,10 +200,10 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiSpring key={v1()} size={"2em"} />,
-        <FaJava key={v1()} size={"2em"} />,
-        <FaAws key={v1()} size={"2em"} />,
-        <SiMysql key={v1()} size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaAws size={"2em"} />,
+        <SiMysql size={"2em"} />,
       ],
       web: {
         btnText: "Repositorio",
@@ -174,9 +227,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -185,6 +238,55 @@ export const Projects = () => {
     },
   ]);
   const [proyects_all, setProjectsAll] = useState([
+    {
+      title: "La Belgrano - Web App",
+      imagen: imgLaBelgrano,
+      description:
+        "Small app for a local butcher shop, whose main function is to receive orders via WhatsApp by selecting products and quantities. In addition, it has a login so that the administrator can add, modify or delete products.",
+      points: [
+        {
+          text: "Frontend: React Js.",
+        },
+        {
+          text: "Backend: Java / Spring Boot.",
+        },
+      ],
+      tools: [
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaDocker size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <SiMysql size={"2em"} />,
+      ],
+      web: {
+        btnText: "Web",
+        url: "https://labelgrano.com.ar",
+      },
+    },
+    {
+      title: "Pedime App - Landing Page",
+      imagen: imgPedimeApp,
+      description: "Landing Page to showcase a Delivery mobile app.",
+      points: [
+        {
+          text: "Frontend: React Js.",
+        },
+        {
+          text: "Sections: Home | About | Features | Functionalities | Gallery.",
+        },
+      ],
+      tools: [
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
+      ],
+      web: {
+        btnText: "Web",
+        url: "https://pedimeapp.exeraineri.com/",
+      },
+    },
     {
       title: "Landing Page - Food Delivery",
       imagen: imgZero_so,
@@ -199,13 +301,13 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Web",
-        url: "https://zona-058-frontend-twsh.vercel.app/",
+        url: "https://zona058.exeraineri.com",
       },
     },
     {
@@ -225,13 +327,13 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <FaJava key={v1()} size={"2em"} />,
-        <SiSpring key={v1()} size={"2em"} />,
-        <SiMysql key={v1()} size={"2em"} />,
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiDocker key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <SiMysql size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiDocker size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Private",
@@ -255,9 +357,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -303,10 +405,10 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiSpring key={v1()} size={"2em"} />,
-        <FaJava key={v1()} size={"2em"} />,
-        <FaAws key={v1()} size={"2em"} />,
-        <SiMysql key={v1()} size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaAws size={"2em"} />,
+        <SiMysql size={"2em"} />,
       ],
       web: {
         btnText: "Repositorio",
@@ -330,9 +432,9 @@ export const Projects = () => {
         },
       ],
       tools: [
-        <SiReact key={v1()} size={"2em"} />,
-        <SiJavascript key={v1()} size={"2em"} />,
-        <SiBootstrap key={v1()} size={"2em"} />,
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
       ],
       web: {
         btnText: "Web",
@@ -429,7 +531,7 @@ const Proj = ({ project }) => {
           <p className="fw-light">{project?.description}</p>
           <ul className="fw-light">
             {project?.points?.map((point) => {
-              return <li key={v1()}>{point.text}</li>;
+              return <li>{point.text}</li>;
             })}
           </ul>
         </div>

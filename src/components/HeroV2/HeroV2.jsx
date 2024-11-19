@@ -210,7 +210,7 @@ export const HeroV2 = () => {
                 {value.isEnglish ? "Contact me" : "Contáctame"}
               </Button>
               <Button
-                href="https://drive.google.com/file/d/1vy22WDL6IB1k-7OqfYwjIKc7XZS3xvZ-/view?usp=sharing"
+                href="https://drive.google.com/file/d/1csAnVmW1QZTeYXVGvm_iD7jJX1BbxVOq/view?usp=sharing"
                 target="_blank"
                 variant="contained"
                 color="primary"

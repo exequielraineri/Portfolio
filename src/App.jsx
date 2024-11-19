@@ -39,90 +39,97 @@ function App() {
           background: "linear-gradient(to bottom,  transparent,#000011 70vh)",
         }}
       >
-        <Menu></Menu>
-        <HeroV2></HeroV2>
         <div
-          className="d-grid gap-3 container my-3"
+          className="mx-auto"
           style={{
-            width: "100%",
-            placeContent: "center",
-            gridTemplateColumns: "repeat(auto-fit, minmax(10px, 40%))",
+            maxWidth: "1200px",
           }}
         >
+          <Menu></Menu>
+          <HeroV2></HeroV2>
           <div
+            className="d-grid gap-3 container my-3"
             style={{
-              maxWidth: "200px",
-              border: "#264066 1px solid",
-              boxShadow: "0 0 5px rgba(255,255,255,.1)",
+              width: "100%",
+              placeContent: "center",
+              gridTemplateColumns: "repeat(auto-fit, minmax(10px, 40%))",
             }}
-            className="w-100 mx-auto rounded-1 p-2 d-flex flex-column"
           >
-            <div className="text-primary fw-bold d-flex align-items-center gap-1 justify-content-start">
-              <FaPlus />
-              <CountUp
-                duration={2}
-                end={2}
-                style={{
-                  fontSize: "1.8em",
-                }}
-              />
-            </div>
-            <span
+            <div
               style={{
-                color: "#264066",
-                fontWeight: "bold",
+                maxWidth: "200px",
+                border: "#264066 1px solid",
+                boxShadow: "0 0 5px rgba(255,255,255,.1)",
               }}
+              className="w-100 mx-auto rounded-1 p-2 d-flex flex-column"
             >
-              {value.isEnglish ? "Experience" : "Experiencia"}
-            </span>
+              <div className="text-primary fw-bold d-flex align-items-center gap-1 justify-content-start">
+                <FaPlus />
+                <CountUp
+                  duration={2}
+                  end={2}
+                  style={{
+                    fontSize: "1.8em",
+                  }}
+                />
+              </div>
+              <span
+                style={{
+                  color: "#264066",
+                  fontWeight: "bold",
+                }}
+              >
+                {value.isEnglish ? "Experience" : "Experiencia"}
+              </span>
+            </div>
+            <div
+              style={{
+                maxWidth: "200px",
+                border: "#264066 1px solid",
+                boxShadow: "0 0 5px rgba(255,255,255,.1)",
+              }}
+              className="mx-auto w-100 rounded-1 p-2 d-flex flex-column"
+            >
+              <div className="text-primary fw-bold d-flex align-items-center w-100 gap-1 justify-content-start">
+                <FaPlus />
+                <CountUp
+                  duration={2}
+                  end={10}
+                  style={{
+                    fontSize: "1.8em",
+                  }}
+                />
+              </div>
+              <span
+                style={{
+                  color: "#264066",
+                  fontWeight: "bold",
+                }}
+              >
+                {value.isEnglish ? "Projects" : "Proyectos"}
+              </span>
+            </div>
           </div>
-          <div
-            style={{
-              maxWidth: "200px",
-              border: "#264066 1px solid",
-              boxShadow: "0 0 5px rgba(255,255,255,.1)",
-            }}
-            className="mx-auto w-100 rounded-1 p-2 d-flex flex-column"
+          <AboutMe></AboutMe>
+          <Experience></Experience>
+          <Projects></Projects>
+          <Skills></Skills>
+          {/* <Contacto></Contacto> */}
+          <Footer></Footer>
+          <Link
+            id="btnFloating"
+            className="btn btn-light shadow btnFloating"
+            style={{}}
+            to="hero"
+            href="#hero"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
           >
-            <div className="text-primary fw-bold d-flex align-items-center w-100 gap-1 justify-content-start">
-              <FaPlus />
-              <CountUp
-                duration={2}
-                end={10}
-                style={{
-                  fontSize: "1.8em",
-                }}
-              />
-            </div>
-            <span
-              style={{
-                color: "#264066",
-                fontWeight: "bold",
-              }}
-            >
-              {value.isEnglish ? "Projects" : "Proyectos"}
-            </span>
-          </div>
+            <FaArrowUp />
+          </Link>
         </div>
-        <AboutMe></AboutMe>
-        <Experience></Experience>
-        <Projects></Projects>
-        <Skills></Skills>
-        <Contacto></Contacto>
-        <Footer></Footer>
-        <Link
-          id="btnFloating"
-          className="btn btn-light shadow btnFloating"
-          style={{}}
-          to="hero"
-          href="#hero"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={500}
-        >
-          <FaArrowUp />
-        </Link>
       </div>
     </>
   );

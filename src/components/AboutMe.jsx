@@ -1,8 +1,9 @@
 import "./css/aboutMe.css";
 import { useContext } from "react";
-import imgExeAbout from "../assets/exeNieve.webp";
 import { counterContext } from "../context/contextCounter";
-import { sobreMi, sobreMiEN } from "../data/data";
+import { imgExeAbout } from "../data/data";
+import { sobreMiEN } from "../data/dataComponent";
+import { sobreMi } from "../data/dataComponent";
 export const AboutMe = () => {
   const {
     value: { isEnglish },
