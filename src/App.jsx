@@ -15,7 +15,7 @@ import CountUp from "react-countup";
 import { useContext } from "react";
 import { counterContext } from "./context/contextCounter";
 import Aos from "aos";
-
+import GitHubCalendar from "react-github-calendar";
 function App() {
   window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY;
@@ -114,6 +114,12 @@ function App() {
           <Experience></Experience>
           <Projects></Projects>
           <Skills></Skills>
+          <div
+            className="d-flex justify-content-center my-3"
+            style={{ maxWidth: "1200px" }}
+          >
+            <GitHubCalendar username="exequielraineri" colorScheme="dark" />
+          </div>
           {/* <Contacto></Contacto> */}
           <Footer></Footer>
           <Link
