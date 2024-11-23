@@ -9,8 +9,8 @@ export const Experience = () => {
   return (
     <div id="experience" className="bloque-experience">
       <div
-        data-aos="fade-zoom-in"
-        data-aos-duration="2000"
+        // data-aos="fade-zoom-in"
+        // data-aos-duration="2000"
         className="bloque-titulos"
       >
         {isEnglish ? (
@@ -25,6 +25,7 @@ export const Experience = () => {
           </>
         )}
       </div>
+
       <div
         data-aos="fade-zoom-in"
         data-aos-duration="2000"

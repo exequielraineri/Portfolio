@@ -1,7 +1,8 @@
 export const imgVivero = "./vivero_so.png";
 export const imgPedimeApp = "./pedimeApp_so.png";
-export const imgLaBelgrano = "./labelgrano_so.png";
 export const imgPuntoVenta = "./venta_so.png";
+export const imgSelAgropauny = "./seldash_so.png";
+export const imgLaBelgrano = "./labelgrano_so.png";
 export const imgInventoryPauny = "./inventory_so.png";
 export const imgToDoList = "./tasks_so.png";
 export const imgZero_so = "./zero_so.png";

@@ -10,9 +10,8 @@ import { Footer } from "./components/Footer";
 import { Link } from "react-scroll";
 import { HeroV2 } from "./components/HeroV2/HeroV2";
 import { FaArrowUp, FaPlus } from "react-icons/fa";
-import { Contacto } from "./components/Contacto/Contacto";
 import CountUp from "react-countup";
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { counterContext } from "./context/contextCounter";
 import Aos from "aos";
 import GitHubCalendar from "react-github-calendar";
@@ -30,6 +29,7 @@ function App() {
 
   const { value } = useContext(counterContext);
   Aos.init();
+
   return (
     <>
       <div
@@ -39,12 +39,7 @@ function App() {
           background: "linear-gradient(to bottom,  transparent,#000011 70vh)",
         }}
       >
-        <div
-          className="mx-auto"
-          style={{
-            maxWidth: "1200px",
-          }}
-        >
+        <div className="bloque">
           <Menu></Menu>
           <HeroV2></HeroV2>
           <div
@@ -114,10 +109,8 @@ function App() {
           <Experience></Experience>
           <Projects></Projects>
           <Skills></Skills>
-          <div
-            className="d-flex justify-content-center my-3"
-            style={{ maxWidth: "1200px" }}
-          >
+          {}
+          <div id="gitHubCalendar">
             <GitHubCalendar username="exequielraineri" colorScheme="dark" />
           </div>
           {/* <Contacto></Contacto> */}
@@ -125,7 +118,6 @@ function App() {
           <Link
             id="btnFloating"
             className="btn btn-light shadow btnFloating"
-            style={{}}
             to="hero"
             href="#hero"
             spy={true}

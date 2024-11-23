@@ -44,6 +44,11 @@
 }
 
 
+.bloque{
+  width: 100% ;
+  max-width: "1200px" ;
+  margin: 0px auto;
+}
 
 
 
@@ -88,9 +93,20 @@
   background-color: rgba(38, 64, 102, 1);
 }
 
+#gitHubCalendar{
+display: flex;
+justify-content: center;
+}
 
+@media screen and (max-width:768px) {
+  
 
+    #gitHubCalendar{
+      display: none;
+    }
+}
 @media only screen and (min-width: 1000px) {
+
   .bloque-titulos .fondo-titulo {
     width: 100%;
     font-size: 6em;

@@ -22,6 +22,7 @@ import {
   imgVivero,
   imgLaBelgrano,
   imgPedimeApp,
+  imgSelAgropauny,
 } from "../data/data";
 export const Projects = () => {
   const {
@@ -29,6 +30,36 @@ export const Projects = () => {
   } = useContext(counterContext);
 
   const [proyectos, setProyectos] = useState([
+    {
+      title: "Sel Agropauny - CRM",
+      imagen: imgSelAgropauny,
+      description:
+        "Sistema CRM básico para concesionaria agricola con venta de repuestos. La función principal es llevar un control de inventario y caja.",
+      points: [
+        {
+          text: "Frontend: React Js.",
+        },
+        {
+          text: "Backend: Java / Spring Boot.",
+        },
+        {
+          text: "Herramientas: Netbeans IDE, VS Code, Docker, KVM2.",
+        },
+      ],
+      tools: [
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaDocker size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <SiMysql size={"2em"} />,
+      ],
+      web: {
+        btnText: "Privado",
+        url: "#",
+      },
+    },
     {
       title: "La Belgrano - Aplicación Web",
       imagen: imgLaBelgrano,
@@ -238,6 +269,36 @@ export const Projects = () => {
     },
   ]);
   const [proyects_all, setProjectsAll] = useState([
+    {
+      title: "Sel Agropauny - CRM",
+      imagen: imgSelAgropauny,
+      description:
+        "Basic CRM system for an agricultural dealership selling spare parts. The main function is to keep track of inventory and cash flow.",
+      points: [
+        {
+          text: "Frontend: React Js.",
+        },
+        {
+          text: "Backend: Java / Spring Boot.",
+        },
+        {
+          text: "Tools: Netbeans IDE, VS Code, Docker, KVM2.",
+        },
+      ],
+      tools: [
+        <SiReact size={"2em"} />,
+        <SiJavascript size={"2em"} />,
+        <SiBootstrap size={"2em"} />,
+        <FaJava size={"2em"} />,
+        <FaDocker size={"2em"} />,
+        <SiSpring size={"2em"} />,
+        <SiMysql size={"2em"} />,
+      ],
+      web: {
+        btnText: "Private",
+        url: "#",
+      },
+    },
     {
       title: "La Belgrano - Web App",
       imagen: imgLaBelgrano,
@@ -453,8 +514,8 @@ export const Projects = () => {
     >
       <div id="projects" className="container ">
         <div
-          // data-aos="fade-zoom-in"
-          // data-aos-duration="1500"
+          data-aos="fade-zoom-in"
+          data-aos-duration="1500"
           className="bloque-titulos"
         >
           {isEnglish ? (
@@ -480,6 +541,7 @@ export const Projects = () => {
                 })}
           </Fade>
         </section>
+
         {/* <Carrusel products={productos}></Carrusel> */}
       </div>
       {/* <button
@@ -506,7 +568,7 @@ const Proj = ({ project }) => {
       <div className="item">
         <div className="contenido py-3">
           <img
-            loading="eager"
+            loading="lazy"
             width={"100%"}
             height={"100%"}
             src={project?.imagen}
