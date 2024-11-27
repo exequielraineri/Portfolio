@@ -3,6 +3,12 @@ import { Typewriter } from "react-simple-typewriter";
 import "./HeroV2.css";
 import { counterContext } from "../../context/contextCounter";
 import { Button } from "@mui/material";
+import {
+  URL_CV,
+  URL_GITHUB,
+  URL_INSTAGRAM,
+  URL_LINKEDIN,
+} from "../../data/data";
 export const HeroV2 = () => {
   const words = ["Java Developer", "Full Stack Developer"];
   const palabras = ["Desarrollador Java", "Desarrollador Full Stack"];
@@ -157,7 +163,7 @@ export const HeroV2 = () => {
               className="redes d-flex gap-1"
             >
               <a
-                href="https://www.instagram.com/exeraineri/"
+                href={URL_INSTAGRAM}
                 target="_blank"
                 className="icon-redes"
                 rel="noreferrer"
@@ -171,7 +177,7 @@ export const HeroV2 = () => {
                 ></i>
               </a>
               <a
-                href="https://github.com/exequielraineri"
+                href={URL_GITHUB}
                 target="_blank"
                 className="icon-redes"
                 rel="noreferrer"
@@ -185,7 +191,7 @@ export const HeroV2 = () => {
                 ></i>
               </a>
               <a
-                href="https://www.linkedin.com/in/exequielraineri/"
+                href={URL_LINKEDIN}
                 target="_blank"
                 className="icon-redes"
                 rel="noreferrer"
@@ -210,7 +216,7 @@ export const HeroV2 = () => {
                 {value.isEnglish ? "Contact me" : "Contáctame"}
               </Button>
               <Button
-                href="https://drive.google.com/file/d/1csAnVmW1QZTeYXVGvm_iD7jJX1BbxVOq/view?usp=sharing"
+                href={URL_CV}
                 target="_blank"
                 variant="contained"
                 color="primary"
