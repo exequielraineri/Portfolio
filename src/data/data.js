@@ -22,5 +22,5 @@ export const URL_CV =
   "https://drive.google.com/file/d/1ZPlX-AsNwCRD8dFmXfl0WqBIocZnSeFw/view?usp=sharing";
 
 export const URL_INSTAGRAM = "https://www.instagram.com/exeraineri/";
-export const URL_LINKEDIN = "https://github.com/exequielraineri";
-export const URL_GITHUB = "https://www.linkedin.com/in/exequielraineri/";
+export const URL_LINKEDIN = "https://www.linkedin.com/in/exequielraineri/";
+export const URL_GITHUB = "https://github.com/exequielraineri";
