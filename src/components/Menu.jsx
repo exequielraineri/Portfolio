@@ -7,7 +7,7 @@ import { useContext } from "react";
 import { counterContext } from "../context/contextCounter";
 export const Menu = () => {
   const {
-    value: { isEnglish },
+    value: { isEnglish, setIsEnglish },
   } = useContext(counterContext);
 
   return (
@@ -84,6 +84,24 @@ export const Menu = () => {
               >
                 {isEnglish ? "Skills" : "Habilidades"}
               </Link>
+            </Nav>
+            <Nav>
+              <a
+                className={!isEnglish && "border-bottom"}
+                href="#spain"
+                title="Spain"
+                onClick={() => setIsEnglish(false)}
+              >
+                <img src="/flag-spain.png" alt="Spain" />
+              </a>
+              <a
+                className={isEnglish && "border-bottom"}
+                href="#english"
+                title="English"
+                onClick={() => setIsEnglish(true)}
+              >
+                <img src="/flag-english.png" alt="English" />
+              </a>
             </Nav>
           </Nav>
         </Navbar.Collapse>

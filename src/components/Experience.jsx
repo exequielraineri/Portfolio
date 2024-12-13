@@ -51,10 +51,13 @@ export const Experience = () => {
             </h4>
             <ul>
               <li>
-                Creation of Landing Page for agricultural machinery dealership.
+                I designed and developed a management system using Java, Spring
+                Boot, React, achieving a significant improvement in query times,
+                reports, and business alternatives.
               </li>
               <li>
-                Creation of simulation software for an industrial process.
+                I designed and developed a landing page for a gastronomic
+                venture using React, achieving a better vision of the business.
               </li>
             </ul>
             <div className="progreso shadow"></div>
@@ -79,11 +82,14 @@ export const Experience = () => {
             </h4>
             <ul>
               <li>
-                Creación de Landing Page para concesionario de maquinaria
-                agrícola.
+                Diseñé y desarrollé un sistema de gestión utilizando Java,
+                Spring Boot, React, logrando una mejora significativa en los
+                tiempos de consultas, reportes, y alternativas de negocio.
               </li>
               <li>
-                Creación de software de simulación de un proceso industrial.
+                Diseñé y desarrollé un landing page para una emprendimiento
+                gastronómico utilizando React, logrando una mejor visión del
+                negocio.
               </li>
             </ul>
             <div className="progreso shadow"></div>

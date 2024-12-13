@@ -1,14 +1,16 @@
+import { Button } from "@mui/material";
 import { useContext } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import "./HeroV2.css";
 import { counterContext } from "../../context/contextCounter";
-import { Button } from "@mui/material";
 import {
-  URL_CV,
+  URL_CV_EN,
+  URL_CV_ES,
   URL_GITHUB,
   URL_INSTAGRAM,
   URL_LINKEDIN,
 } from "../../data/data";
+import "./HeroV2.css";
+
 export const HeroV2 = () => {
   const words = ["Java Developer", "Full Stack Developer"];
   const palabras = ["Desarrollador Java", "Desarrollador Full Stack"];
@@ -93,11 +95,12 @@ export const HeroV2 = () => {
                     fontSize: ".9em",
                   }}
                 >
-                  With over 2 years of experience in backend development, I
-                  specialize in creating robust and efficient solutions using
-                  Java. Although I have worked on a few projects, each one has
-                  given me the opportunity to focus on quality, efficiency, and
-                  delivering a great user experience.
+                  Junior Java Developer with experience in Spring technologies
+                  and web application development, as well as in relational
+                  database design and management. Proactive and
+                  results-oriented, I stand out for my ability to learn quickly,
+                  collaborate in multidisciplinary teams and solve technical
+                  problems efficiently.
                 </p>
                 <p
                   className="fw-light"
@@ -107,9 +110,9 @@ export const HeroV2 = () => {
                     fontSize: ".9em",
                   }}
                 >
-                  My goal is to continue applying my knowledge and skills to
-                  build software that not only meets technical requirements but
-                  also provides an excellent user experience.
+                  I am looking for an opportunity in an innovative company where
+                  I can apply my skills and continue to grow professionally in
+                  the IT sector.
                 </p>
               </>
             ) : (
@@ -122,12 +125,12 @@ export const HeroV2 = () => {
                     fontSize: ".9em",
                   }}
                 >
-                  Con más de 2 años de experiencia en el desarrollo backend, me
-                  especializo en crear soluciones robustas y eficientes
-                  utilizando Java. Aunque he trabajado en algunos proyectos,
-                  cada uno me ha brindado la oportunidad de enfocarme en la
-                  calidad, la eficiencia y en ofrecer una excelente experiencia
-                  al usuario.
+                  Desarrollador Java Junior con experiencia en tecnologías
+                  Spring y el desarrollo de aplicaciones web, así como en el
+                  diseño y gestión de bases de datos relacionales. Proactivo y
+                  orientado a resultados, destaco por mi capacidad para aprender
+                  rápidamente, colaborar en equipos multidisciplinarios y
+                  resolver problemas técnicos de forma eficiente.
                 </p>
                 <p
                   // className="fw-light"
@@ -137,10 +140,9 @@ export const HeroV2 = () => {
                     fontSize: ".9em",
                   }}
                 >
-                  Mi objetivo es seguir aplicando mis conocimientos y
-                  habilidades para construir software que no solo cumpla con los
-                  requisitos técnicos, sino que también proporcione una
-                  excelente experiencia al usuario.
+                  Busco una oportunidad en una empresa innovadora donde pueda
+                  aplicar mis habilidades y seguir creciendo profesionalmente en
+                  el sector IT.
                 </p>
               </>
             )}
@@ -216,11 +218,10 @@ export const HeroV2 = () => {
                 {value.isEnglish ? "Contact me" : "Contáctame"}
               </Button>
               <Button
-                href={URL_CV}
+                href={value.isEnglish ? URL_CV_EN : URL_CV_ES}
                 target="_blank"
                 variant="contained"
                 color="primary"
-                // className="px-2"
                 size="small"
               >
                 {value.isEnglish ? "Resume" : "Currículum"}

@@ -1,56 +1,34 @@
 export const sobreMi = (
   <>
     <p
-      className="fw-light text-light"
+      className="fw-normal text-light"
       style={{
         textAlign: "justify",
         hyphens: "none",
       }}
     >
-      ¡Bienvenido! Mi nombre es <b className="fw-bold">Exequiel Raineri</b>, soy
-      de <b className="fw-bold">Santiago del Estero, Argentina</b>. Actualmente,
-      soy estudiante de último año en la{" "}
-      <b className="fw-bold">
-        <a
-          className="text-light text-decoration-none"
-          href="https://www.unse.edu.ar/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Universidad Nacional de Santiago del Estero (UNSE)
-        </a>
-      </b>
-      , donde curso el Pregrado de{" "}
-      <b className="fw-bold">Programador Universitario en Informática.</b>
-    </p>
-    <p
-      className="fw-light text-light"
-      style={{
-        textAlign: "justify",
-        hyphens: "none",
-      }}
-    >
-      Durante los últimos dos años, he estado activamente programando y
-      trabajando en proyectos personales, lo que me ha permitido adquirir
-      experiencia con varias tecnologías, enfocándome principalmente en{" "}
-      <b className="fw-bold">Java</b>. Entre ellas,{" "}
-      <b className="fw-bold">Spring Framework</b> ha sido la que más me ha
-      interesado, permitiéndome aprender sobre{" "}
-      <b className="fw-bold">Arquitectura de Microservicios.</b>
-    </p>
-    <p
-      className="fw-light text-light"
-      style={{
-        textAlign: "justify",
-        hyphens: "none",
-      }}
-    >
-      <b className="fw-bold">Mi objetivo</b> es continuar en el{" "}
-      <b className="fw-bold">Desarrollo Backend</b> y poder contribuir con mi
-      experiencia, en proyectos de software.
+      ¡Hola! Soy <strong>Exequiel Raineri</strong>, un apasionado por la
+      tecnología y el desarrollo de software, nacido y criado en{" "}
+      <strong> Santiago del Estero, Argentina</strong>. Actualmente, estoy en mi
+      último año de estudios en la{" "}
+      <strong>Universidad Nacional de Santiago del Estero (UNSE)</strong>, donde
+      curso el{" "}
+      <strong>Pregrado de Programador Universitario en Informática</strong>.
       <br />
       <br />
-      <cite>Espero que podamos trabajar juntos! 💻</cite>
+      En los últimos dos años, he dedicado gran parte de mi tiempo a explorar y
+      trabajar en proyectos personales de programación. Este camino me ha
+      llevado a descubrir mi interés por el <strong>desarrollo backend</strong>,
+      especialmente con tecnologías como <strong>Java</strong> y el framework
+      <strong> Spring</strong>.
+      <br />
+      <br />
+      Mi meta es seguir creciendo como desarrollador backend y aportar mi
+      entusiasmo y experiencia en proyectos de software que hagan una
+      diferencia.
+      <br />
+      <br />
+      ¡Espero que podamos crear algo increíble juntos! 💻
     </p>
   </>
 );
@@ -58,53 +36,31 @@ export const sobreMi = (
 export const sobreMiEN = (
   <>
     <p
-      className="fw-light text-light"
+      className="fw-normal text-light"
       style={{
         textAlign: "justify",
         hyphens: "none",
       }}
     >
-      Welcome! My name is <b className="fw-bold">Exequiel Raineri</b>, I am from{" "}
-      <b className="fw-bold">Santiago del Estero, Argentina</b>. Currently, I am
-      a final year student at the{" "}
-      <b className="fw-bold">
-        <a
-          className="text-light text-decoration-none"
-          href="https://www.unse.edu.ar/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          University of Santiago del Estero (UNSE)
-        </a>
-      </b>
-      , where I studied the Undergraduate Degree in{" "}
-      <b className="fw-bold">University Programmer in Computer Science.</b>
-    </p>
-    <p
-      className="fw-light text-light"
-      style={{
-        textAlign: "justify",
-        hyphens: "none",
-      }}
-    >
-      For the last two years, I have been actively programming and working on
-      personal projects, which has allowed me to gain experience with various
-      technologies, focusing mainly on <b className="fw-bold">Java</b>. Among
-      them, <b className="fw-bold">Spring Framework</b> has been the one that
-      has interested me the most, allowing me to learn about{" "}
-      <b className="fw-bold">Microservices Architecture.</b>
-    </p>
-    <p
-      className="fw-light text-light"
-      style={{
-        textAlign: "justify",
-        hyphens: "none",
-      }}
-    >
-      <b className="fw-bold">My goal</b> is to continue in{" "}
-      <b className="fw-bold">Backend Development</b> and be able to contribute
-      with my experience to software projects.
-      <br />I hope we can work together! 💻
+      Hello! I am <strong>Exequiel Raineri</strong>, a technology and software
+      development enthusiast, born and raised in{" "}
+      <strong>Santiago del Estero, Argentina</strong>. I am currently in my
+      final year at the{" "}
+      <strong>National University of Santiago del Estero (UNSE)</strong>,
+      pursuing a <strong>University Programmer in Computer Science</strong>.
+      <br />
+      <br />
+      Over the past two years, I have dedicated much of my time to exploring and
+      working on personal programming projects. This journey has led me to
+      discover my passion for <strong>backend development</strong>, particularly
+      with technologies like <strong>Java</strong> and the{" "}
+      <strong>Spring</strong> framework.
+      <br />
+      <br />
+      My goal is to continue growing as a backend developer and contribute my
+      enthusiasm and experience to software projects that make a difference.
+      <br />
+      <br />I look forward to creating something amazing together! 💻
     </p>
   </>
 );

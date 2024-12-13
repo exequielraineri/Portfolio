@@ -69,18 +69,6 @@ export const Footer = () => {
         >
           <i className="fa-regular fa-envelope"></i>
         </a>
-        <Link
-          to={"hero"}
-          href="#hero"
-          style={{
-            cursor: "pointer",
-          }}
-          title={isEnglish ? "Language" : "Idioma"}
-          className="link-info  text-decoration-none "
-          onClick={() => setIsEnglish(!isEnglish)}
-        >
-          {isEnglish ? "| ES" : "| EN"}
-        </Link>
       </div>
     </footer>
   );
