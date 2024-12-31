@@ -89,7 +89,7 @@ function App() {
                 <FaPlus />
                 <CountUp
                   duration={2}
-                  end={10}
+                  end={9}
                   style={{
                     fontSize: "1.8em",
                   }}

@@ -1,8 +1,7 @@
-import { FaJava, FaDocker, FaAws } from "react-icons/fa";
+import { FaJava, FaDocker, FaAws, FaHryvnia } from "react-icons/fa";
 import {
   SiReact,
   SiJavascript,
-  SiBootstrap,
   SiSpring,
   SiDocker,
   SiMysql,
@@ -88,7 +87,32 @@ export const sobreMiEN = (
 
 export const proyectos = [
   {
-    title: "Sel Agropauny - CRM",
+    title: "Real State NOA - Software para Inmobiliaria",
+    imagen: "/realStateNoa.png",
+    description:
+      "Sistema diseñado para la gestión inmobiliaria, enfocado en simplificar procesos y mejorar la organización de una empresa en este sector.",
+    points: [
+      {
+        text: "Frontend: React Js.",
+      },
+      {
+        text: "Backend: Java / Spring Boot.",
+      },
+    ],
+    tools: [
+      <SiReact size={"2em"} title="React Js" />,
+      <FaJava size={"2em"} title="Java" />,
+      <FaDocker size={"2em"} title="Docker" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
+    ],
+    web: {
+      btnText: "Repositorio",
+      url: "https://github.com/exequielraineri/RealStateNOA-Frontend",
+    },
+  },
+  {
+    title: "Sel Agropauny - Software para Concesionaria",
     imagen: imgSelAgropauny,
     description:
       "Sistema CRM básico para concesionaria agricola con venta de repuestos. La función principal es llevar un control de inventario y caja.",
@@ -104,13 +128,11 @@ export const proyectos = [
       },
     ],
     tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-      <FaJava size={"2em"} />,
-      <FaDocker size={"2em"} />,
-      <SiSpring size={"2em"} />,
-      <SiMysql size={"2em"} />,
+      <SiReact size={"2em"} title="React Js" />,
+      <FaJava size={"2em"} title="Java" />,
+      <FaDocker size={"2em"} title="Docker" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
     ],
     web: {
       btnText: "Privado",
@@ -131,41 +153,37 @@ export const proyectos = [
       },
     ],
     tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-      <FaJava size={"2em"} />,
-      <FaDocker size={"2em"} />,
-      <SiSpring size={"2em"} />,
-      <SiMysql size={"2em"} />,
+      <SiReact size={"2em"} title="React Js" />,
+      <FaJava size={"2em"} title="Java" />,
+      <FaDocker size={"2em"} title="Docker" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
     ],
     web: {
       btnText: "Web",
       url: "https://labelgrano.com.ar",
     },
   },
-  {
-    title: "Pedime App - Landing Page",
-    imagen: imgPedimeApp,
-    description: "Landing Page para mostrar una aplicación movil de Delivery",
-    points: [
-      {
-        text: "Frontend: React Js.",
-      },
-      {
-        text: "Secciones: Inicio | Acerca De | Caracteristicas | Funcionalidades | Galeria.",
-      },
-    ],
-    tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-    ],
-    web: {
-      btnText: "Web",
-      url: "https://pedimeapp.exeraineri.com/",
-    },
-  },
+  // {
+  //   title: "Pedime App - Landing Page",
+  //   imagen: imgPedimeApp,
+  //   description: "Landing Page para mostrar una aplicación movil de Delivery",
+  //   points: [
+  //     {
+  //       text: "Frontend: React Js.",
+  //     },
+  //     {
+  //       text: "Secciones: Inicio | Acerca De | Caracteristicas | Funcionalidades | Galeria.",
+  //     },
+  //   ],
+  //   tools: [
+  //     <SiReact size={"2em"} title="React Js" />,
+  //   ],
+  //   web: {
+  //     btnText: "Web",
+  //     url: "https://pedimeapp.exeraineri.com/",
+  //   },
+  // },
   {
     title: "Food Delivery - Landing Page",
     imagen: imgZero_so,
@@ -179,11 +197,7 @@ export const proyectos = [
         text: "Secciones: Inicio | Productos | Nosotros | Unidades.",
       },
     ],
-    tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-    ],
+    tools: [<SiReact size={"2em"} title="React Js" />],
     web: {
       btnText: "Web",
       url: "https://zona058.exeraineri.com/",
@@ -206,13 +220,11 @@ export const proyectos = [
       },
     ],
     tools: [
-      <FaJava size={"2em"} />,
-      <SiSpring size={"2em"} />,
-      <SiMysql size={"2em"} />,
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiDocker size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
+      <FaJava size={"2em"} title="Java" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
+      <SiReact size={"2em"} title="React Js" />,
+      <SiDocker size={"2em"} title="Docker" />,
     ],
     web: {
       btnText: "Privado",
@@ -235,11 +247,7 @@ export const proyectos = [
         text: "Características: Se puede agregar al carrito dinámicamente usando useState y useEffect.",
       },
     ],
-    tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-    ],
+    tools: [<SiReact size={"2em"} title="React Js" />],
     web: {
       btnText: "Web",
       url: "https://exequielraineri.github.io/ViveroReact-UTN/",
@@ -262,9 +270,8 @@ export const proyectos = [
       },
     ],
     tools: [
-      <FaJava size={"2em"} />,
-      <FaAws size={"2em"} />,
-      <SiSpring size={"2em"} />,
+      <FaJava size={"2em"} title="Java" />,
+      <SiSpring size={"2em"} title="Spring" />,
     ],
     web: {
       btnText: "Repositorio",
@@ -288,10 +295,10 @@ export const proyectos = [
   //     },
   //   ],
   //   tools: [
-  //     <SiSpring size={"2em"} />,
-  //     <FaJava size={"2em"} />,
+  //     <SiSpring size={"2em"} title="Spring" />,
+  //     <FaJava size={"2em"} title="Java" />,
   //     <FaAws size={"2em"} />,
-  //     <SiMysql size={"2em"} />,
+  //     <SiMysql size={"2em"} title="MySQL" />,
   //   ],
   //   web: {
   //     btnText: "Repositorio",
@@ -315,9 +322,7 @@ export const proyectos = [
   //     },
   //   ],
   //   tools: [
-  //     <SiReact size={"2em"} />,
-  //     <SiJavascript size={"2em"} />,
-  //     <SiBootstrap size={"2em"} />,
+  //     <SiReact size={"2em"} title="React Js" />,
   //   ],
   //   web: {
   //     btnText: "Web",
@@ -327,6 +332,31 @@ export const proyectos = [
 ];
 
 export const projects = [
+  {
+    title: "Real State NOA - Real Estate Software",
+    imagen: "/realStateNoa.png",
+    description:
+      "System designed for real estate management, focused on simplifying processes and improving the organization of a company in this sector.",
+    points: [
+      {
+        text: "Frontend: React Js.",
+      },
+      {
+        text: "Backend: Java / Spring Boot.",
+      },
+    ],
+    tools: [
+      <SiReact size={"2em"} title="React Js" />,
+      <FaJava size={"2em"} title="Java" />,
+      <FaDocker size={"2em"} title="Docker" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
+    ],
+    web: {
+      btnText: "Repository",
+      url: "https://github.com/exequielraineri/RealStateNOA-Frontend",
+    },
+  },
   {
     title: "Sel Agropauny - CRM",
     imagen: imgSelAgropauny,
@@ -344,13 +374,11 @@ export const projects = [
       },
     ],
     tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-      <FaJava size={"2em"} />,
-      <FaDocker size={"2em"} />,
-      <SiSpring size={"2em"} />,
-      <SiMysql size={"2em"} />,
+      <SiReact size={"2em"} title="React Js" />,
+      <FaJava size={"2em"} title="Java" />,
+      <FaDocker size={"2em"} title="Docker" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
     ],
     web: {
       btnText: "Private",
@@ -371,41 +399,37 @@ export const projects = [
       },
     ],
     tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-      <FaJava size={"2em"} />,
-      <FaDocker size={"2em"} />,
-      <SiSpring size={"2em"} />,
-      <SiMysql size={"2em"} />,
+      <SiReact size={"2em"} title="React Js" />,
+      <FaJava size={"2em"} title="Java" />,
+      <FaDocker size={"2em"} title="Docker" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
     ],
     web: {
       btnText: "Web",
       url: "https://labelgrano.com.ar",
     },
   },
-  {
-    title: "Pedime App - Landing Page",
-    imagen: imgPedimeApp,
-    description: "Landing Page to showcase a Delivery mobile app.",
-    points: [
-      {
-        text: "Frontend: React Js.",
-      },
-      {
-        text: "Sections: Home | About | Features | Functionalities | Gallery.",
-      },
-    ],
-    tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-    ],
-    web: {
-      btnText: "Web",
-      url: "https://pedimeapp.exeraineri.com/",
-    },
-  },
+  // {
+  //   title: "Pedime App - Landing Page",
+  //   imagen: imgPedimeApp,
+  //   description: "Landing Page to showcase a Delivery mobile app.",
+  //   points: [
+  //     {
+  //       text: "Frontend: React Js.",
+  //     },
+  //     {
+  //       text: "Sections: Home | About | Features | Functionalities | Gallery.",
+  //     },
+  //   ],
+  //   tools: [
+  //     <SiReact size={"2em"} title="React Js" />,
+  //   ],
+  //   web: {
+  //     btnText: "Web",
+  //     url: "https://pedimeapp.exeraineri.com/",
+  //   },
+  // },
   {
     title: "Landing Page - Food Delivery",
     imagen: imgZero_so,
@@ -419,11 +443,7 @@ export const projects = [
         text: "Sections: Home | Products | About | Unidad.",
       },
     ],
-    tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-    ],
+    tools: [<SiReact size={"2em"} title="React Js" />],
     web: {
       btnText: "Web",
       url: "https://zona058.exeraineri.com",
@@ -446,13 +466,11 @@ export const projects = [
       },
     ],
     tools: [
-      <FaJava size={"2em"} />,
-      <SiSpring size={"2em"} />,
-      <SiMysql size={"2em"} />,
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiDocker size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
+      <FaJava size={"2em"} title="Java" />,
+      <SiSpring size={"2em"} title="Spring" />,
+      <SiMysql size={"2em"} title="MySQL" />,
+      <SiReact size={"2em"} title="React Js" />,
+      <SiDocker size={"2em"} title="Docker" />,
     ],
     web: {
       btnText: "Private",
@@ -475,11 +493,7 @@ export const projects = [
         text: "Features: It can be added to the cart dynamically using useState and useEffect.",
       },
     ],
-    tools: [
-      <SiReact size={"2em"} />,
-      <SiJavascript size={"2em"} />,
-      <SiBootstrap size={"2em"} />,
-    ],
+    tools: [<SiReact size={"2em"} title="React Js" />],
     web: {
       btnText: "Web",
       url: "https://exequielraineri.github.io/ViveroReact-UTN/",
@@ -524,10 +538,10 @@ export const projects = [
   //     },
   //   ],
   //   tools: [
-  //     <SiSpring size={"2em"} />,
-  //     <FaJava size={"2em"} />,
+  //     <SiSpring size={"2em"} title="Spring" />,
+  //     <FaJava size={"2em"} title="Java" />,
   //     <FaAws size={"2em"} />,
-  //     <SiMysql size={"2em"} />,
+  //     <SiMysql size={"2em"} title="MySQL" />,
   //   ],
   //   web: {
   //     btnText: "Repositorio",
@@ -551,9 +565,7 @@ export const projects = [
   //     },
   //   ],
   //   tools: [
-  //     <SiReact size={"2em"} />,
-  //     <SiJavascript size={"2em"} />,
-  //     <SiBootstrap size={"2em"} />,
+  //     <SiReact size={"2em"} title="React Js" />,
   //   ],
   //   web: {
   //     btnText: "Web",

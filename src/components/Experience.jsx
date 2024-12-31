@@ -33,7 +33,7 @@ export const Experience = () => {
       >
         {isEnglish ? (
           <>
-            <p>May, 2023 - Present</p>
+            <p>Jan, 2024 - Present</p>
             <h3
               style={{
                 margin: 0,
@@ -64,7 +64,7 @@ export const Experience = () => {
           </>
         ) : (
           <>
-            <p>Mayo, 2023 - Actualidad</p>
+            <p>Ener, 2024 - Actualidad</p>
             <h3
               style={{
                 margin: 0,
