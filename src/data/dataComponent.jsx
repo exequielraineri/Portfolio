@@ -190,8 +190,8 @@ export const proyectos = [
       <SiMysql size={"2em"} title="MySQL" />,
     ],
     web: {
-      btnText: "Privado",
-      url: "#",
+      btnText: "Demo",
+      url: "https://labelgrano.exeraineri.com/",
     },
   },
   {
