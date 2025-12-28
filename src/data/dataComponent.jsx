@@ -1,21 +1,17 @@
-import { FaJava, FaDocker, FaAws, FaHryvnia } from "react-icons/fa";
+import { FaAndroid, FaDocker, FaJava } from "react-icons/fa";
 import {
-  SiReact,
-  SiJavascript,
-  SiSpring,
   SiDocker,
   SiMysql,
+  SiReact,
+  SiSpring
 } from "react-icons/si";
 import {
-  imgSelAgropauny,
-  imgLaBelgrano,
-  imgPedimeApp,
-  imgZero_so,
   imgFlota,
-  imgVivero,
+  imgLaBelgrano,
   imgPuntoVenta,
-  imgInventoryPauny,
-  imgToDoList,
+  imgSelAgropauny,
+  imgVivero,
+  imgZero_so
 } from "./data";
 
 export const sobreMi = (
@@ -87,16 +83,47 @@ export const sobreMiEN = (
 
 export const proyectos = [
   {
-    title: "Real State NOA - Software para Inmobiliaria",
+    title: "EventPoint - Sistema de Gestión de Eventos",
+    imagen: "/eventpoint.png", 
+    description:
+      "Proyecto Final de Carrera (UNSE). Plataforma integral para la creación, gestión y descubrimiento de eventos en tiempo real.",
+    points: [
+      {
+        text: "Diseño y desarrollo de una API REST robusta con Spring Boot y MySQL.",
+      },
+      {
+        text: "Seguridad avanzada con Spring Security y JWT.",
+      },
+      {
+        text: "Desarrollo de lógica de geolocalización para filtrado de eventos en tiempo real.",
+      },
+      {
+        text: "App móbil nativa Android con patrón MVVM.",
+      },
+    ],
+    tools: [
+      <SiSpring size={"2em"} title="Spring" />,
+      <FaJava size={"2em"} title="Java" />,
+      <SiMysql size={"2em"} title="MySQL" />,
+      <FaAndroid size={"2em"} title="Android" />,
+      <SiReact size={"2em"} title="React Js" />,
+    ],
+    web: {
+      btnText: "En Desarrollo",
+      url: "#",
+    },
+  },
+  {
+    title: "Real State NOA - Gestión Inmobiliaria",
     imagen: "/realStateNoa.png",
     description:
-      "Sistema diseñado para la gestión inmobiliaria, enfocado en simplificar procesos y mejorar la organización de una empresa en este sector.",
+      "Plataforma completa para la administración de propiedades, diseñada para optimizar los procesos de venta y alquiler de una inmobiliaria líder.",
     points: [
       {
         text: "Frontend: React Js.",
       },
       {
-        text: "Backend: Java / Spring Boot.",
+        text: "API REST escalable con Java y Spring Boot.",
       },
     ],
     tools: [
@@ -112,19 +139,19 @@ export const proyectos = [
     },
   },
   {
-    title: "Sel Agropauny - Software para Concesionaria",
+    title: "Sel Agropauny - CRM Agrícola",
     imagen: imgSelAgropauny,
     description:
-      "Sistema CRM básico para concesionaria agricola con venta de repuestos. La función principal es llevar un control de inventario y caja.",
+      "Solución CRM para concesionaria de maquinaria agrícola. Centraliza el control de stock, gestión de clientes y flujo de caja.",
     points: [
       {
-        text: "Frontend: React Js.",
+        text: "Control de inventario de repuestos en tiempo real.",
       },
       {
-        text: "Backend: Java / Spring Boot.",
+        text: "Módulo de facturación y reportes financieros.",
       },
       {
-        text: "Herramientas: Netbeans IDE, VS Code, Docker, KVM2.",
+        text: "Infraestructura containerizada con Docker.",
       },
     ],
     tools: [
@@ -140,16 +167,19 @@ export const proyectos = [
     },
   },
   {
-    title: "La Belgrano - Aplicación Web",
+    title: "La Belgrano - E-commerce Express",
     imagen: imgLaBelgrano,
     description:
-      "Pequeña aplicación para una carnicería local, cuya función principal es recibir pedidos vía WhatsApp mediante una selección de productos y cantidades. Además, cuenta con un inicio de sesión para que el administrador pueda agregar, modificar o eliminar productos.",
+      "WebApp optimizada para pedidos rápidos vía WhatsApp. Panel administrativo completo para gestión de catálogo en tiempo real.",
     points: [
       {
-        text: "Frontend: React Js.",
+        text: "Catálogo de productos dinámico.",
       },
       {
-        text: "Backend: Java / Spring Boot.",
+        text: "Integración directa con WhatsApp API.",
+      },
+      {
+        text: "Panel de administración seguro.",
       },
     ],
     tools: [
@@ -160,63 +190,43 @@ export const proyectos = [
       <SiMysql size={"2em"} title="MySQL" />,
     ],
     web: {
-      btnText: "Web",
-      url: "https://labelgrano.com.ar",
+      btnText: "Privado",
+      url: "#",
     },
   },
-  // {
-  //   title: "Pedime App - Landing Page",
-  //   imagen: imgPedimeApp,
-  //   description: "Landing Page para mostrar una aplicación movil de Delivery",
-  //   points: [
-  //     {
-  //       text: "Frontend: React Js.",
-  //     },
-  //     {
-  //       text: "Secciones: Inicio | Acerca De | Caracteristicas | Funcionalidades | Galeria.",
-  //     },
-  //   ],
-  //   tools: [
-  //     <SiReact size={"2em"} title="React Js" />,
-  //   ],
-  //   web: {
-  //     btnText: "Web",
-  //     url: "https://pedimeapp.exeraineri.com/",
-  //   },
-  // },
   {
-    title: "Food Delivery - Landing Page",
+    title: "Zona 058 - Landing Gastronómica",
     imagen: imgZero_so,
     description:
-      "El principal objetivo del proyecto es crear una landing page que atraiga tanto a la creciente comunidad venezolana en Uruguay como a los locales interesados en explorar nuevas experiencias culinarias. La página debe ser visualmente atractiva, fácil de navegar y funcional, proporcionando toda la información necesaria para que los visitantes puedan conocer el menú, hacer reservaciones, y aprender más sobre la cultura venezolana.",
+      "Experiencia digital inmersiva para conectar con la cultura culinaria venezolana. Diseño enfocado en la conversión y retención de usuarios.",
     points: [
       {
-        text: "Frontend: React Js.",
+        text: "Diseño UX/UI de alto impacto.",
       },
       {
-        text: "Secciones: Inicio | Productos | Nosotros | Unidades.",
+        text: "Navegación intuitiva y responsive.",
       },
     ],
     tools: [<SiReact size={"2em"} title="React Js" />],
     web: {
-      btnText: "Web",
-      url: "https://zona058.exeraineri.com/",
+      btnText: "Visitar Web",
+      url: "https://zona058.exeraineri.com",
     },
   },
   {
-    title: "Sistema Flota - Gestion de Equipos",
+    title: "Fleet Master - Gestión de Flota",
     imagen: imgFlota,
     description:
-      "El objetivo principal del proyecto es desarrollar un sistema de gestión de flota integral que permita a la empresa cliente monitorear y administrar sus activos de manera efectiva. Este sistema deberá proporcionar herramientas para el seguimiento en tiempo real de vehículos, programación de mantenimiento, gestión de conductores, análisis de datos y generación de informes detallados.",
+      "Sistema empresarial para el monitoreo y administración de activos vehiculares. Enfoque en la eficiencia operativa y mantenimiento preventivo.",
     points: [
       {
-        text: "CRUD equipos",
+        text: "Tracking y asignación de activos.",
       },
       {
-        text: "Seguimiento detallado",
+        text: "Programación de mantenimiento y alertas.",
       },
       {
-        text: "Reportes Varios",
+        text: "Dashboard analítico de rendimiento.",
       },
     ],
     tools: [
@@ -232,103 +242,47 @@ export const proyectos = [
     },
   },
   {
-    title: "Vivero Mis Raices",
+    title: "Vivero Mis Raices - E-commerce",
     imagen: imgVivero,
     description:
-      "Es una tienda online de un vivero local. Este proyecto lo hice junto con una compañera de clase y nos encantó cómo quedó.",
+      "Tienda online moderna con carrito de compras dinámico y gestión de estado avanzada.",
     points: [
       {
-        text: "Trabajamos juntos en la parte Frontend usando React.",
+        text: "Carrito de compras con React Context.",
       },
       {
-        text: "Paginas: Inicio | Productos | Nosotros | Carrito.",
-      },
-      {
-        text: "Características: Se puede agregar al carrito dinámicamente usando useState y useEffect.",
+        text: "Diseño limpio y amigable.",
       },
     ],
     tools: [<SiReact size={"2em"} title="React Js" />],
     web: {
-      btnText: "Web",
+      btnText: "Demo",
       url: "https://exequielraineri.github.io/ViveroReact-UTN/",
     },
   },
+  /*
   {
-    title: "Punto de Venta",
+    title: "Punto de Venta - ERP Desktop",
     imagen: imgPuntoVenta,
     description:
-      "Sistema para gestionar productos, clientes, proveedores y seguimiento de ingresos y gastos del local.",
+      "Software de gestión comercial robusto (JavaFX). Control total sobre productos, clientes, proveedores y finanzas.",
     points: [
       {
-        text: "CRUD (Crear, Buscar, Actualizar, Eliminar) de todas las entidades del proyecto.",
+        text: "Gestión completa de stock y facturación.",
       },
       {
-        text: "Implementa sistema de usuario.",
+        text: "Reportes semanales y control de caja.",
       },
       {
-        text: "Informes semanales, filtro de búsqueda variado, generación de facturas.",
+        text: "Sistema de permisos y roles de usuario.",
       },
     ],
-    tools: [
-      <FaJava size={"2em"} title="Java" />,
-      <SiSpring size={"2em"} title="Spring" />,
-    ],
+    tools: ["fa-brands fa-java", "fa-solid fa-database"],
     web: {
       btnText: "Repositorio",
       url: "https://github.com/exequielraineri/puntoVenta-JavaFX",
     },
-  },
-  // {
-  //   title: "Gestión de inventario",
-  //   imagen: imgInventoryPauny,
-  //   description:
-  //     "Este proyecto se trata de un Punto de Venta y Control de Stock para un concesionario de Maquinaria Agrícola, donde también venden repuestos.",
-  //   points: [
-  //     {
-  //       text: "Diseñado para dos locales, que comparten una base de datos para consultar precios y stock, sin necesidad de llamarse por teléfono.",
-  //     },
-  //     {
-  //       text: "Ellos generan informes variados.",
-  //     },
-  //     {
-  //       text: "Control total de efectivo y transacciones con Triggers.",
-  //     },
-  //   ],
-  //   tools: [
-  //     <SiSpring size={"2em"} title="Spring" />,
-  //     <FaJava size={"2em"} title="Java" />,
-  //     <FaAws size={"2em"} />,
-  //     <SiMysql size={"2em"} title="MySQL" />,
-  //   ],
-  //   web: {
-  //     btnText: "Repositorio",
-  //     url: "https://github.com/exequielraineri/Inventario-Pauny",
-  //   },
-  // },
-  // {
-  //   title: "ToDo List",
-  //   imagen: imgToDoList,
-  //   description:
-  //     "Lista de tareas con reacción capaz de almacenarlas en almacenamiento local.",
-  //   points: [
-  //     {
-  //       text: "Crud de tareas.",
-  //     },
-  //     {
-  //       text: "Opcion de marcado check.",
-  //     },
-  //     {
-  //       text: "Muestra numeros de tareas completadas.",
-  //     },
-  //   ],
-  //   tools: [
-  //     <SiReact size={"2em"} title="React Js" />,
-  //   ],
-  //   web: {
-  //     btnText: "Web",
-  //     url: "https://exequielraineri.github.io/TodoApp/",
-  //   },
-  // },
+  },*/
 ];
 
 export const projects = [

@@ -1,13 +1,3 @@
-import { FaDocker, FaJava } from "react-icons/fa";
-import {
-  SiJavascript,
-  SiReact,
-  SiBootstrap,
-  SiSpring,
-  SiMysql,
-  SiDocker,
-} from "react-icons/si";
-import React from "react";
 
 export const imgVivero = "./vivero_so.png";
 export const imgPedimeApp = "./pedimeApp_so.png";
