@@ -1,4 +1,4 @@
-import { FaAndroid, FaDocker, FaJava } from "react-icons/fa";
+import { FaAndroid, FaBootstrap, FaDocker, FaJava } from "react-icons/fa";
 import {
   SiDocker,
   SiMysql,
@@ -11,7 +11,8 @@ import {
   imgPuntoVenta,
   imgSelAgropauny,
   imgVivero,
-  imgZero_so
+  imgZero_so,
+  personalTrainer
 } from "./data";
 
 export const sobreMi = (
@@ -111,6 +112,31 @@ export const proyectos = [
     web: {
       btnText: "En Desarrollo",
       url: "#",
+    },
+  },
+  {
+    title: "Personal Trainer - Landing Page",
+    imagen: personalTrainer,
+    description:
+      "Landing Page para Personal Trainer. Diseño responsive y agradable para el usuario. Implementación de React Js.",
+    points: [
+      {
+        text: "Diseño UX/UI minimalista.",
+      },
+      {
+        text: "Navegación intuitiva y responsive.",
+      },
+      {
+        text: "Implementación de React Js.",
+      },
+    ],
+    tools: [
+      <SiReact size={"2em"} title="React Js" />,
+      <FaBootstrap size={"2em"} title="Bootstrap" />,
+    ],
+    web: {
+      btnText: "Visitar Web",
+      url: "https://trainer.exeraineri.com",
     },
   },
   {
