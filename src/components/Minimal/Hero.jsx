@@ -1,5 +1,5 @@
 import React from 'react';
-import { URL_GITHUB, URL_LINKEDIN, URL_CV_ES } from '../../data/data';
+import { URL_GITHUB, URL_LINKEDIN, URL_CV } from '../../data/data';
 
 export const Hero = () => {
   return (
@@ -11,7 +11,7 @@ export const Hero = () => {
         <p style={{ fontSize: '1.2rem', color: '#888', marginBottom: '1.5rem', fontWeight: '500' }}>
           Backend Developer | Java & Spring Specialist
         </p>
-        
+
         <div style={{ marginBottom: '2rem', color: '#ccc', lineHeight: '1.8', fontSize: '1rem' }}>
           <p style={{ marginBottom: '1rem' }}>
             De <strong>Santiago del Estero, Argentina</strong>. 25 años.
@@ -19,27 +19,27 @@ export const Hero = () => {
             Programador Universitario en Informática graduado de la <strong>UNSE</strong>.
           </p>
           <p>
-            Especializado en el diseño de <strong>arquitecturas de software escalables</strong>, microservicios y desarrollo de APIs robustas. 
+            Especializado en el diseño de <strong>arquitecturas de software escalables</strong>, microservicios y desarrollo de APIs robustas.
             Apasionado por transformar requerimientos complejos en soluciones eficientes y bien estructuradas.
           </p>
         </div>
-        
+
         <div style={{ display: 'flex', gap: '1.5rem' }}>
           <a href={URL_GITHUB} target="_blank" rel="noreferrer" className="link-hover">GitHub</a>
           <a href={URL_LINKEDIN} target="_blank" rel="noreferrer" className="link-hover">LinkedIn</a>
-          <a href={URL_CV_ES} target="_blank" rel="noreferrer" className="link-hover">Currículum</a>
+          <a href={URL_CV} target="_blank" rel="noreferrer" className="link-hover">Currículum</a>
           <a href="mailto:exeraineridev@gmail.com" className="link-hover">Email</a>
         </div>
       </div>
-      
+
       <div style={{ width: '140px', height: '140px', flexShrink: 0 }}>
-        <img 
-          src="/exe.webp" 
-          alt="Exequiel Raineri" 
-          style={{ 
-            width: '100%', 
-            height: '100%', 
-            objectFit: 'cover', 
+        <img
+          src="/exe.webp"
+          alt="Exequiel Raineri"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
             borderRadius: '50%',
             filter: 'grayscale(100%)',
             transition: 'all 0.4s ease',
@@ -47,16 +47,16 @@ export const Hero = () => {
             border: '2px solid #333'
           }}
           onMouseOver={(e) => {
-             e.currentTarget.style.filter = 'grayscale(0%)';
-             e.currentTarget.style.borderColor = '#fff';
+            e.currentTarget.style.filter = 'grayscale(0%)';
+            e.currentTarget.style.borderColor = '#fff';
           }}
           onMouseOut={(e) => {
-             e.currentTarget.style.filter = 'grayscale(100%)';
-             e.currentTarget.style.borderColor = '#333';
+            e.currentTarget.style.filter = 'grayscale(100%)';
+            e.currentTarget.style.borderColor = '#333';
           }}
         />
       </div>
-      
+
       <style>{`
         .link-hover {
           color: #aaa;

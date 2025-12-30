@@ -20,7 +20,7 @@ export const docker = "./docker-solo.png";
 export const imgExeAbout = "./exeNieve.webp";
 export const personalTrainer = "./personaltrainer.png";
 
-export const URL_CV_ES = "./CV_ExequielRaineri_ES.pdf";
+export const URL_CV = "./CV_ExequielRaineri.pdf";
 export const URL_CV_EN = "./CV_ExequielRaineri_EN.pdf";
 
 export const URL_INSTAGRAM = "https://www.instagram.com/exeraineri/";
