@@ -12,8 +12,8 @@ function App() {
       <Experience />
       <Projects />
       <Skills />
-      
-      <footer style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid #222', color: '#444', fontSize: '0.8rem' }}>
+
+      <footer className="footer">
         <p>© {new Date().getFullYear()} Exequiel Raineri.</p>
       </footer>
     </Layout>
