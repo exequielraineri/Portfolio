@@ -8,9 +8,6 @@ import {
 import {
   imgFlota,
   imgLaBelgrano,
-  imgSelAgropauny,
-  imgVivero,
-  imgZero_so,
   personalTrainer
 } from "./data";
 
@@ -97,34 +94,6 @@ export const proyectos = [
     },
   },
   {
-    title: "Sel Agropauny - CRM Agrícola",
-    imagen: imgSelAgropauny,
-    description:
-      "Solución CRM para concesionaria de maquinaria agrícola. Centraliza el control de stock, gestión de clientes y flujo de caja.",
-    points: [
-      {
-        text: "Control de inventario de repuestos en tiempo real.",
-      },
-      {
-        text: "Módulo de facturación y reportes financieros.",
-      },
-      {
-        text: "Infraestructura containerizada con Docker.",
-      },
-    ],
-    tools: [
-      <SiReact size={"2em"} title="React Js" />,
-      <FaJava size={"2em"} title="Java" />,
-      <FaDocker size={"2em"} title="Docker" />,
-      <SiSpring size={"2em"} title="Spring" />,
-      <SiMysql size={"2em"} title="MySQL" />,
-    ],
-    web: {
-      btnText: "Privado",
-      url: "#",
-    },
-  },
-  {
     title: "La Belgrano - E-commerce Express",
     imagen: imgLaBelgrano,
     description:
@@ -153,25 +122,6 @@ export const proyectos = [
     },
   },
   {
-    title: "Zona 058 - Landing Gastronómica",
-    imagen: imgZero_so,
-    description:
-      "Experiencia digital inmersiva para conectar con la cultura culinaria venezolana. Diseño enfocado en la conversión y retención de usuarios.",
-    points: [
-      {
-        text: "Diseño UX/UI de alto impacto.",
-      },
-      {
-        text: "Navegación intuitiva y responsive.",
-      },
-    ],
-    tools: [<SiReact size={"2em"} title="React Js" />],
-    web: {
-      btnText: "Visitar Web",
-      url: "https://zona058.exeraineri.com",
-    },
-  },
-  {
     title: "Fleet Master - Gestión de Flota",
     imagen: imgFlota,
     description:
@@ -197,25 +147,6 @@ export const proyectos = [
     web: {
       btnText: "Privado",
       url: "#",
-    },
-  },
-  {
-    title: "Vivero Mis Raices - E-commerce",
-    imagen: imgVivero,
-    description:
-      "Tienda online moderna con carrito de compras dinámico y gestión de estado avanzada.",
-    points: [
-      {
-        text: "Carrito de compras con React Context.",
-      },
-      {
-        text: "Diseño limpio y amigable.",
-      },
-    ],
-    tools: [<SiReact size={"2em"} title="React Js" />],
-    web: {
-      btnText: "Demo",
-      url: "https://exequielraineri.github.io/ViveroReact-UTN/",
     },
   },
 ];
