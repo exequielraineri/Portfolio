@@ -21,8 +21,8 @@ export const stats = [
 
 export const contact = {
   email: "exeraineridev@gmail.com",
-  whatsapp: "https://wa.me/5493854063988",
-  whatsappLabel: "+54 9 385 406-3988",
+  whatsapp: "https://wa.me/5493854845145",
+  whatsappLabel: "+54 9 385 484-5145",
   linkedin: "https://www.linkedin.com/in/exequielraineri/",
   github: "https://github.com/exequielraineri",
   cv: "/CV_ExequielRaineri.pdf",
