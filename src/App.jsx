@@ -1,22 +1,35 @@
 import "./app.css";
-import { Experience } from "./components/Minimal/Experience";
-import { Hero } from "./components/Minimal/Hero";
-import { Layout } from "./components/Minimal/Layout";
-import { Projects } from "./components/Minimal/Projects";
-import { Skills } from "./components/Minimal/Skills";
+import { Contact } from "./components/Contact";
+import { Experience } from "./components/Experience";
+import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { Nav } from "./components/Nav";
+import { Projects } from "./components/Projects";
+import { Stack } from "./components/Stack";
+import { useReveal } from "./hooks/useReveal";
 
 function App() {
-  return (
-    <Layout>
-      <Hero />
-      <Experience />
-      <Projects />
-      <Skills />
+  useReveal();
 
-      <footer className="footer">
-        <p>© {new Date().getFullYear()} Exequiel Raineri.</p>
-      </footer>
-    </Layout>
+  return (
+    <>
+      <a className="skip-link" href="#proyectos">
+        Saltar a proyectos
+      </a>
+
+      <div className="backdrop" aria-hidden="true" />
+
+      <Nav />
+
+      <main className="container" id="top">
+        <Hero />
+        <Experience />
+        <Projects />
+        <Stack />
+        <Contact />
+        <Footer />
+      </main>
+    </>
   );
 }
 
