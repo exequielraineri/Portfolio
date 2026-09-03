@@ -163,6 +163,30 @@ export const projects = [
     ],
   },
   {
+    id: "lo-de-marce",
+    group: "web",
+    title: "Lo de Marce",
+    subtitle: "Confitería artesanal · carta digital",
+    year: "2026",
+    cover: "/work/lodemarce.jpg",
+    mark: "LM",
+    description:
+      "Sitio y carta digital de una confitería de La Banda: pizzas, milanesas, empanadas y sándwiches caseros, con pedidos por WhatsApp y menú accesible desde la mesa.",
+    highlights: [
+      "Carta en página propia, separada de la home, para poder compartirla como enlace directo.",
+      "Generador de códigos QR incluido, para llevar el menú a las mesas del local sin imprimir cartas nuevas.",
+      "HTML, CSS y JS puros con estilos embebidos: sin build ni dependencias, desplegado en Vercel.",
+    ],
+    tech: ["HTML5", "CSS3", "JavaScript", "Vercel"],
+    links: [
+      {
+        label: "Visitar sitio",
+        url: "https://lo-de-marce-confiteria.vercel.app/",
+        kind: "primary",
+      },
+    ],
+  },
+  {
     id: "yuyitos",
     group: "web",
     title: "Yuyitos Materos",

@@ -14,8 +14,8 @@ export const profile = {
 };
 
 export const stats = [
-  { value: "10", label: "proyectos construidos" },
-  { value: "4", label: "sitios de clientes online" },
+  { value: "11", label: "proyectos construidos" },
+  { value: "5", label: "sitios de clientes online" },
   { value: "2024", label: "freelance desde" },
 ];
 
